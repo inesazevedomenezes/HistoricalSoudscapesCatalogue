@@ -1,0 +1,3917 @@
+istar.plugins = {};
+istar.plugins.soundscapeCatalogue = {};
+istar.plugins.soundscapeSearch = {};
+
+istar.plugins.soundscapeCatalogue.model = {
+  "actors": [
+    {
+      "id": "ecc68215-ac8b-4837-9d76-e299b114b4d3",
+      "text": "Catalogue",
+      "type": "istar.Actor",
+      "x": 60,
+      "y": 26,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": [
+        {
+          "id": "1c932337-570b-45e0-8b32-26b22d21ce93",
+          "text": "Sociocultural Dimension",
+          "type": "istar.Quality",
+          "x": 1422,
+          "y": 203,
+          "customProperties": {
+            "Description": "Basically, sociocultural factors are customs, lifestyles and values that characterize a society. More specifically, cultural aspects include aesthetics, education, language, law and politics, religion, social organizations, technology and material culture, values and attitudes.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "558b9468-5103-4b71-9818-64bf660eb2cd",
+          "text": "Historical Dimension",
+          "type": "istar.Quality",
+          "x": 3296,
+          "y": 203,
+          "customProperties": {
+            "Description": "The historical dimension concerns about the preservability of the world´s history. Keeping our cultural and historical heritage available, so that everyone has access to it, makes it possible to study what no longer exists, and also know the history of the past of what still exists in the present."
+          }
+        },
+        {
+          "id": "562f3064-bab0-41cf-9675-2520f0c690ac",
+          "text": "Religious Dimension",
+          "type": "istar.Quality",
+          "x": 2323,
+          "y": 378,
+          "customProperties": {
+            "Description": "The religious dimension includes every aspect of a soundscape that is connected to religion, such as the socio cultural system of designated behaviours and practices, morals, beliefs, worldviews, texts, sanctified places, prophecies, ethics, or organizations, that relates humanity to supernatural, transcendental, and spiritual elements.",
+            "Dimension": "Historical & Sociocultural"
+          }
+        },
+        {
+          "id": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+          "text": "Economic Dimension",
+          "type": "istar.Quality",
+          "x": 6880,
+          "y": 201,
+          "customProperties": {
+            "Description": "",
+            "Dimension": ""
+          }
+        },
+        {
+          "id": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+          "text": "Spatial Dimension",
+          "type": "istar.Quality",
+          "x": 5219,
+          "y": 197,
+          "customProperties": {
+            "Description": "",
+            "Dimension": ""
+          }
+        },
+        {
+          "id": "5355c61a-2aff-4f2a-ae21-f4fdd40e1a33",
+          "text": "Personal Dimension",
+          "type": "istar.Quality",
+          "x": 173,
+          "y": 203,
+          "customProperties": {
+            "Description": "This dimension relates to the aspects that depend on each individual.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5",
+          "text": "Military Dimension",
+          "type": "istar.Quality",
+          "x": 2018,
+          "y": 378,
+          "customProperties": {
+            "Description": "The military dimension includes every aspect of a soundscape that is connected to the armed forces, wich is a heavily armed, highly organized force primarily intended for warfare, in the many existing military branches such as an army, navy, air force, space force, marines, or coast guard.",
+            "Dimension": "Sociocultural & Historical"
+          }
+        },
+        {
+          "id": "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b",
+          "text": "Sonorous Dimension",
+          "type": "istar.Quality",
+          "x": 7514,
+          "y": 197,
+          "customProperties": {
+            "Description": "A global dimension that divides all types of sounds in three categories.",
+            "Dimension": ""
+          }
+        },
+        {
+          "id": "ffbde67d-5fea-4e02-a48b-fa598f354324",
+          "text": " Biophony",
+          "type": "istar.Quality",
+          "x": 7618,
+          "y": 380,
+          "customProperties": {
+            "Description": "Used to describe the collective sound that vocalizing animals create in each given environment. It explores new definitions of animal territory as defined by biophony, and addresses changes in density, diversity, and richness of animal populations. Mapping soundscapes can help to illustrate possible driving mechanisms and provide a valuable tool for urban management and planning. However, quantifying biophony across urban landscapes has proven difficult in the presence of anthrophony, or sounds generated by humans. The complete absence of biophony or geophony in a given biome would be expressed as dysphonia. Each species evolves to establish and maintain its own acoustic bandwidth so that its voice is not masked.",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "a63b3f7a-782d-4edd-8ea0-8985253a7bb6",
+          "text": "Geophony",
+          "type": "istar.Quality",
+          "x": 7407,
+          "y": 379,
+          "customProperties": {
+            "Description": "Relates to the naturally occurring non-biological sounds coming from different types of habitats, whether marine or terrestrial. Typically, geophony refers to the sounds of natural forces, such as water, wind, and thunder, occurring in wild, relatively undisturbed habitats. But geophony is not limited to that narrow definition since these audio sources can be experienced nearly everywhere the effects of wind and water are expressed.",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "fd78827d-324f-40cb-a400-7dc657112a1d",
+          "text": "Anthropophony",
+          "type": "istar.Quality",
+          "x": 7507,
+          "y": 379,
+          "customProperties": {
+            "Description": "This represents human generated sound from either humans, themselves, or the electro-mechanical technologies they employ. The term anthropophony, is used to describe all sound produced by humans, whether coherent, such as music, theatre, and language, or incoherent and chaotic such as random signals generated primarily by electromechanical means. Anthropophony is divided into two sub-categories: controlled sound, such as music, language, and theatre, and chaotic or incoherent sound sometimes referred to as noise.",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+          "text": "Historical Soundscapes",
+          "type": "istar.Quality",
+          "x": 3564,
+          "y": 29,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "b6e04683-fce6-40f1-a6c5-5d402602292a",
+          "text": "Subjectivity",
+          "type": "istar.Quality",
+          "x": 169,
+          "y": 381,
+          "customProperties": {
+            "Description": "What is abstract depends on the individual subjectivity of each one.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "ecc9fc2c-836c-4bdf-b65f-bb1950c918de",
+          "text": "Expressivity",
+          "type": "istar.Quality",
+          "x": 546,
+          "y": 379,
+          "customProperties": {
+            "Description": "The different forms of expression, whether they are acts, words, sounds or gestures, affect the soundscape of a place.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+          "text": "Efficient Technology",
+          "type": "istar.Quality",
+          "x": 1715,
+          "y": 379,
+          "customProperties": {
+            "Description": "To carry out the study of the soundscapes domain, new technologies are taken advantage of, collecting the necessary information, registering it and making it available, allowing the preservation and sharing of the domain as cultural heritage, in an efficient manner.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "84443b25-db2f-4b63-90b0-3749983c8938",
+          "text": "Cultural Identity",
+          "type": "istar.Quality",
+          "x": 1010,
+          "y": 379,
+          "customProperties": {
+            "Description": "The identity of a nation or folk, of a culture, of an individual, insofar as it is influenced by the culture to which it belongs.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "0d125719-cc55-483b-bc0d-74c995f06be6",
+          "text": "Education",
+          "type": "istar.Quality",
+          "x": 1419,
+          "y": 379,
+          "customProperties": {
+            "Description": "It is important to establish education in culture, technology and civic initiative, enhancing the richness of the soundscape. Likewise, the study and interest in soundscapes fomment social development and the sense of integration in the community.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "7806c637-bbbd-4e26-aeb5-f278755e689e",
+          "text": "Survivability",
+          "type": "istar.Quality",
+          "x": 3023,
+          "y": 378,
+          "customProperties": {
+            "Description": "Natural or man-made disasters can lead to the extinction of species or cultures, making the soundscape poorer.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "7fbf0a9c-03bf-4eab-b129-aebec087e8ea",
+          "text": "Availability",
+          "type": "istar.Quality",
+          "x": 3484,
+          "y": 377,
+          "customProperties": {
+            "Description": "It is crucial that historical information is made available in a way that makes it accessible and shareable.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "670611ee-5062-4fb7-b4eb-441b796548a0",
+          "text": "Preservability",
+          "type": "istar.Quality",
+          "x": 3824,
+          "y": 378,
+          "customProperties": {
+            "Description": "The concern for the preservation of cultural heritage makes it necessary to study the domain of historic soundscapes.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+          "text": "Sustainability",
+          "type": "istar.Quality",
+          "x": 6272,
+          "y": 379,
+          "customProperties": {
+            "Description": "The projects carried out in the field of soundscapes only make sense to behave if they are economically bearable.\n\nEnvironmental sustainability is the responsibility to conserve natural resources and protect global ecosystems to support health and well-being, now and in the future.",
+            "Dimension": "Spatial & Economic"
+          }
+        },
+        {
+          "id": "3686161e-dada-4926-a879-401e36058137",
+          "text": "Accessibility",
+          "type": "istar.Quality",
+          "x": 5216,
+          "y": 379,
+          "customProperties": {
+            "Description": "Having accessibility is to ensure that it is possible to reach a place, that is, that there are easy ways to access a place, thus making sense to choose that place to hold an event, for example. It would not make sense to choose the summit of a mountain, or a volcano, as it would not be easy to reach, many people would prefer not to attend the event, nor would it be safe.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "ee145fbc-54c0-4ba2-b20b-3f9dcc5cbbb9",
+          "text": "Inheritability",
+          "type": "istar.Quality",
+          "x": 2719,
+          "y": 377,
+          "customProperties": {
+            "Description": "The ability to inherit is what shapes who we are, and also the soundscape that surrounds us.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "848cc220-db96-490f-9d32-13edcca61504",
+          "text": "Time and Space Locatability",
+          "type": "istar.Quality",
+          "x": 4110,
+          "y": 379,
+          "customProperties": {
+            "Description": "It is important to date and locate in space the path of an object, formation or occurrence, etc. Each time and period is associated with certain soundscapes, such as years, months, days and so on. (eg December-Christmas, Middle Ages, Modern Age-Discoveries, etc.).",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "e7dff419-7d76-40e4-8bde-70941f45e5fa",
+          "text": "Presentability",
+          "type": "istar.Quality",
+          "x": 4364,
+          "y": 379,
+          "customProperties": {
+            "Description": "One of the main reasons that leads someone to go to a place, to visit it, is the presentation and the beauty found in places and landscapes.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "08b65380-18de-4a27-8d61-f1172a07155b",
+          "text": "Audibility",
+          "type": "istar.Quality",
+          "x": 5505,
+          "y": 378,
+          "customProperties": {
+            "Description": "Sound is a physical process that is received by living beings. For a sound to be heard, it must correspond to a series of aspects, without them, a soundscape would not be possible.\nThe propagation of a compression front or mechanical wave is called sound, it has the form of a longitudinal wave that propagates in a circumcentric way, in solid, liquid or gaseous material media.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "5a1e35ea-1f95-46ae-a5ae-59d67f59efd8",
+          "text": "Economic Safety",
+          "type": "istar.Quality",
+          "x": 6653,
+          "y": 379,
+          "customProperties": {
+            "Description": "The study of soundscapes presupposes the existence of projects and institutions to be managed, that is, organizations made up of people, businesses or resources, which are related to each other, oriented towards common goals, which have to be managed or managed and need maintenance .",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "415c5a3e-58d9-43c3-b958-e4fed64e726b",
+          "text": "Enterpreneurship",
+          "type": "istar.Quality",
+          "x": 6869,
+          "y": 376,
+          "customProperties": {
+            "Description": "Entrepreneurship is the ability and readiness to develop, organize and manage a service. The most prominent example of entrepreneurship is the start of new businesses. It is necessary to resort to business analysis through economic models to ensure that it makes sense to continue with that business, which also applies to service ideas in the field of soundscapes, directly, as software platforms, or indirectly, as music events or even commercial businesses, like bars, and all establishments that somehow generate sound.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "29d78c2f-2b2e-46fb-a408-ba4aa3f2527d",
+          "text": "Life Quality",
+          "type": "istar.Quality",
+          "x": 7268,
+          "y": 380,
+          "customProperties": {
+            "Description": "The economic power of a country provides the infrastructure and access necessary to make life more comfortable for the population, especially enabling the existence of education and health. These are related to the soundscapes in the way that teaching and learning of software development, the study of conservation and restoration, music, art, history, technologies, among others, are allowed. On the other hand, only a healthy population has the possibility to go to places, events, etc. and study the landscapes and, at the same time, their study promotes the physical exercise of those who visit the places.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "600c683f-9f1b-4890-b77f-cc18345b5ca8",
+          "text": "Produtivity",
+          "type": "istar.Quality",
+          "x": 7075,
+          "y": 380,
+          "customProperties": {
+            "Description": "Sound landscapes are related to the production of goods and services insofar as there are goods necessary for their study, such as sound recording equipment, computers, there are also goods related to sound and music, such as instruments, microphones, etc. and equally\nessential products for the functioning of daily life such as transport, food.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "0d0ae6ed-e705-4715-98cd-1f502fd0e394",
+          "text": "Art Registration",
+          "type": "istar.Quality",
+          "x": 381,
+          "y": 571,
+          "customProperties": {
+            "Description": "The registration of content related to the art of a culture contributes to its preservation.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "0e5ddf69-87bb-4a8c-b070-8f383881a867",
+          "text": "Behaviour",
+          "type": "istar.Quality",
+          "x": 544,
+          "y": 570,
+          "customProperties": {
+            "Description": "Human and non-human behavior in a place has\na great impact on the soundscape that surrounds it.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "9e966519-dc67-4b3d-b88c-d0c5eb9a69ec",
+          "text": "Communicability",
+          "type": "istar.Quality",
+          "x": 686,
+          "y": 571,
+          "customProperties": {
+            "Description": "Sounds linked to the communication of human beings or other living beings. Communication, whether verbal or non-verbal, allows the exchange of information between two or more interlocutors, generating content in the soundscapes.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "25f23cbc-146f-44aa-96fd-84df887bf59b",
+          "text": "Cultural Expression",
+          "type": "istar.Quality",
+          "x": 857,
+          "y": 570,
+          "customProperties": {
+            "Description": "Record of the cultural expression of a culture, such as behaviors and beliefs.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "79014765-cb64-41f8-8a26-2fdd17365aa9",
+          "text": "Cultural Patrimony",
+          "type": "istar.Quality",
+          "x": 1005,
+          "y": 571,
+          "customProperties": {
+            "Description": "The set of all goods, popular manifestations, cults, material and immaterial traditions, recognized with historical and cultural importance of a region with representative value.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "df1654f9-7fda-4a6d-9866-d76be77b8905",
+          "text": "Info Provided",
+          "type": "istar.Goal",
+          "x": 1117,
+          "y": 575,
+          "customProperties": {
+            "Description": "In order to preserve the identity and cultural patrimony of a culture, its beneficial that this information can be provided.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "01e861ff-3d22-4eab-8e2a-0486dbe9e679",
+          "text": "Promote Education",
+          "type": "istar.Goal",
+          "x": 1238,
+          "y": 576,
+          "customProperties": {
+            "Description": "Promoting education so that everyone has acess to study and gain knowledge.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "65b84e1c-cdf2-4de8-a026-efa807a56cd7",
+          "text": "Social Integration",
+          "type": "istar.Goal",
+          "x": 1422,
+          "y": 577,
+          "customProperties": {
+            "Description": "Education helps integration in society.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "0dbcb368-8d0b-417d-a124-ef8e9bc36759",
+          "text": "Social Development",
+          "type": "istar.Goal",
+          "x": 1514,
+          "y": 578,
+          "customProperties": {
+            "Description": "As they develop and perceive their own individuality within their community, they also gain skills to communicate with other people and process their actions. Skills like bouncing back from being teased or sitting still in a group to listen to a story are all examples of healthy social and emotional development. They involve the ability to manage feelings and impulses which are needed to grow and learn.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "1e159bf5-f064-47bc-b1e6-d3488c91b634",
+          "text": "Security",
+          "type": "istar.Quality",
+          "x": 1908,
+          "y": 571,
+          "customProperties": {
+            "Description": "It is necessary to ensure that a platform is secure so that registered information and personal data are not accessible to others.\n\nThe military dimension guarantees the security of a nation.",
+            "Dimension": "Sociocultural & Military"
+          }
+        },
+        {
+          "id": "9c0dffa7-2606-4d01-9e53-0f0d58c7769a",
+          "text": "Evolvability",
+          "type": "istar.Quality",
+          "x": 1712,
+          "y": 569,
+          "customProperties": {
+            "Description": "With the constant evolution of technology, it is necessary to ensure that the platforms remain in use.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "f49595c4-29ba-4083-8d52-133ac04da16e",
+          "text": "Storability",
+          "type": "istar.Quality",
+          "x": 1810,
+          "y": 571,
+          "customProperties": {
+            "Description": "Information storage so that it can be used and consulted later.\n\nImages - The visual representation of a place at a given moment is captured in the form of an image, which can be mental, a drawing or a photograph.\n\nAudio - The sounds currently can be recorded and stored in audio files which allows us to keep a record of the soundscapes.\n\nVideo - Videos are a way of combining both visual and audio representations, enabling a more complete experience of a soundscape.\nCurrently, 360 ° video recordings are also made, a form of virtual reality, through which, by rotating the screen, you can look in all directions and hear the sound\ncorresponding, allowing to obtain a sound environment of a space in its entirety.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "2dcaa186-91b7-484e-b67e-de98e73f41ad",
+          "text": "Availability",
+          "type": "istar.Quality",
+          "x": 1614,
+          "y": 570,
+          "customProperties": {
+            "Description": "It is important to ensure the availability of technologically stored information for the user.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "c237b50c-64e1-4a10-8130-a900f2879c27",
+          "text": "Defense of a Country",
+          "type": "istar.Goal",
+          "x": 1908,
+          "y": 758,
+          "customProperties": {
+            "Description": "The military protects its country by defending it from the armed forces of enemies, if there is a war. The military can also be ordered by the government of the country to attack another country. Some things people do in the military are use weapons, drive vehicles, and repair weapons.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "9aeaaecc-bf9a-4dda-ab4a-0676c74de084",
+          "text": "Military Soundscape Registration",
+          "type": "istar.Goal",
+          "x": 2014,
+          "y": 571,
+          "customProperties": {
+            "Description": "The registration of content related to the military dimension contributes to its sharing, access and preservation.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "58de3315-0bd7-47e1-b57f-3a520c579329",
+          "text": " Bands",
+          "type": "istar.Resource",
+          "x": 1914,
+          "y": 925,
+          "customProperties": {
+            "Description": "Bands provide martial music during official events including state arrivals, military funerals, ship commissioning, and change of command and promotion ceremonies. They conduct public performances in support of military public relations and recruitment activities such as street parades and concerts and they provide popular music groups to entertain deployed military personnel. Most bands of the U.S. armed forces reconfigure into combat units during wartime during which they have non-musical responsibilities, including guarding prisoners of war and defending command centers.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "a32055e8-0b6c-4bbe-8f68-4722927085ef",
+          "text": "Provide Military Content",
+          "type": "istar.Task",
+          "x": 2014,
+          "y": 754,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "9899c791-4437-48ca-9e86-c7aeae13ac1b",
+          "text": "Firearms",
+          "type": "istar.Resource",
+          "x": 2070,
+          "y": 926,
+          "customProperties": {
+            "Description": "A typical muzzle blast generates a shock wave with a sound pressure level (SPL) of 140 dB or louder. A whip-like “snap” or “crack” caused by the sonic boom that occurs as a projectile moves through the air at supersonic speeds. Includes the sounds made by long guns, including rifles and shotguns, and handguns, including revolvers and pistols. \n\nSometimes, being at war can cause such trauma that some sounds similar to gun shots can trigger a set of reactions, like ptsd.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "dba70be8-8df9-48b4-b7a0-aa85bab317c8",
+          "text": "Salvoes",
+          "type": "istar.Resource",
+          "x": 1990,
+          "y": 925,
+          "customProperties": {
+            "Description": "A salvo is the simultaneous discharge of artillery or firearms including the firing of guns either to hit a target or to perform a salute. As a tactic in warfare, the intent is to cripple an enemy in one blow and prevent them from fighting back.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "16ee29a8-d2ba-4d98-a798-9d3849b6856c",
+          "text": "Vehicles",
+          "type": "istar.Resource",
+          "x": 2147,
+          "y": 926,
+          "customProperties": {
+            "Description": "Includes all types of sounds made by all vehicles categories, like cars, trucks, trains, airplanes, helicopters, bycicles, etc. Sounds include horns, wheels, accidents, skids, etc.",
+            "Dimension": "Military"
+          }
+        },
+        {
+          "id": "53d6145e-77e2-4333-9105-5b547f97b92e",
+          "text": "Art Richness",
+          "type": "istar.Goal",
+          "x": 338,
+          "y": 754,
+          "customProperties": {
+            "Description": "A work of art is a product that conveys an idea or an expression. It is a creation that projects or reflects an artist's intention. The works of art move the population that goes to the places to visit them. They can also be sound, as is the example of songs, symphonies, etc.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "4d4c508b-208f-4a5b-9cd1-d7b89ba78bfc",
+          "text": "Music Registation",
+          "type": "istar.Goal",
+          "x": 442,
+          "y": 755,
+          "customProperties": {
+            "Description": "Music is a form of expression that completely alters the soundscapes where it is generated. The musical heritage represents all the heritage that relates to music, singing, sounds, speech and voice. It is therefore important to record and store music, allowing its preservation and sharing, and to study how it relates to soundscapes.\n\"Music allows its creator and / or interpreter to express emotions and feelings and is able to break, in a certain way, the language barrier, once the listener is able to interpret and be part of that moment\".\n\nDance, existing as an artistic expression, or as a form of entertainment or ceremony, constitutes a form of expression that, usually accompanied by music or some kind of sound, alters the soundscape.\n\nMusical instruments are objects used for the purpose of producing music, which varies in the way the sound is produced. Being able to be accompanied by expressions of dance or singing, these have a great impact on the soundscapes where they are used.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "000eca0a-75c8-4811-aa0e-d70fe21449c6",
+          "text": "Sportivity",
+          "type": "istar.Quality",
+          "x": 543,
+          "y": 746,
+          "customProperties": {
+            "Description": "Sports generate sounds typically associated with cheering, announcers, the public or even the sound of players playing.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "8ce6a405-fffb-4255-8a09-351b21ee92e4",
+          "text": "Verbal Communication",
+          "type": "istar.Goal",
+          "x": 643,
+          "y": 754,
+          "customProperties": {
+            "Description": "Although there is a unity of the language, there is a great diversity at the most varied levels of speech. This is an individual act since each individual can choose the elements of the language that suit him, according to his taste and need, according to his situation, the context, his personality, the environment in which he lives etc. The oral way in which the individual uses his voice alters the soundscape around him.\n\nThe soundscape is greatly affected by the way in which man expresses his ability to communicate. This is much more complex than that of other species and is the only one that varies between two different beings. We can associate the sounds of a language to a zone, as well as customs and its soundscape (eg, Portuguese from Brazil-samba). In addition, each language has an associated phonetic alphabet, and certain distinguishing sounds, such as [r] s and [ch] s in Arabic, and the languages ​​spoken vary in time and space, English spoken by a Londoner in the 20th century is not the same as today.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "bf709edd-89e0-4ce8-9856-9b52966571d0",
+          "text": "Body Language",
+          "type": "istar.Goal",
+          "x": 750,
+          "y": 754,
+          "customProperties": {
+            "Description": "Body language can also produce certain sounds wich are associated to them. Ex: clapping, crackles, walking",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "e23d1652-11cb-4cf6-ba14-f69fd7b20f27",
+          "text": "Regist The Beliefs and Behaviours Of a Culture",
+          "type": "istar.Goal",
+          "x": 851,
+          "y": 748,
+          "customProperties": {
+            "Description": "Traditions are expressions and cultural acts that relate directly to people's lives and the values ​​that are passed on from generation to generation, such as oral traditions, performing arts, social practices, rituals, festive events, knowledge and practices related to nature and to the universe, or knowledge and skills to produce traditional crafts. All of these examples relate to soundscapes in their own way.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "89ea4c4b-4e38-40cf-957e-8be66ef6047f",
+          "text": "Cultural Heritage",
+          "type": "istar.Quality",
+          "x": 961,
+          "y": 751,
+          "customProperties": {
+            "Description": "Cultural patrimony only passes from generation to generation, and from the present to the future if it is preserved.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "f2f3bf02-c3b8-443a-b2b8-29ce4f6a46b7",
+          "text": "Preservation",
+          "type": "istar.Goal",
+          "x": 1059,
+          "y": 756,
+          "customProperties": {
+            "Description": "Protection of cultural heritage or protection of cultural goods means all measures to protect cultural property against damage, destruction, theft, embezzlement or other loss.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "c829258e-129d-476c-839d-ddace6734614",
+          "text": "Enhance",
+          "type": "istar.Goal",
+          "x": 1165,
+          "y": 755,
+          "customProperties": {
+            "Description": "Enhance cultural, artistic and creative activities. Education at school  and other places should also contribute for the development of the artistic component of an individual, contributing to the enrichment of a soundscape and the interest on the cultural patrimony.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "6b11d59e-fac1-4913-81ab-a12a3d6f765d",
+          "text": "Empower",
+          "type": "istar.Goal",
+          "x": 1247,
+          "y": 755,
+          "customProperties": {
+            "Description": "Empower civic initiative and intervention. Working for a better society, like changing the laws, helps contributing to the evolution of society and to soundscapes by adding sounds like a manifestation.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "8fc5cf18-f573-4a09-90fc-ab432c2a3481",
+          "text": "Use Technologies",
+          "type": "istar.Goal",
+          "x": 1321,
+          "y": 755,
+          "customProperties": {
+            "Description": "Education on the use of technologies makes it possible to everyone have access and learn how to use technology to their purposes, like having access to information.\nex: Computers, Internet",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "0263767b-6c2c-41d5-be13-e51645ae8b4b",
+          "text": "Sense of Community",
+          "type": "istar.Goal",
+          "x": 1418,
+          "y": 756,
+          "customProperties": {
+            "Description": "When people are integrated in society it creates a sence of community.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "ae2ad8fd-4687-44d5-9eae-a318d9d2cb83",
+          "text": "Fomment Relationship",
+          "type": "istar.Goal",
+          "x": 1515,
+          "y": 754,
+          "customProperties": {
+            "Description": "The school plays an important role in helping children learn to interact positively with their peers and teachers. They learn about healthy relationship skills and develop them further through interactions, both in the classroom and on the playground.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "13c9562a-31df-4794-b7a8-70e87d41b501",
+          "text": "Compatibility",
+          "type": "istar.Quality",
+          "x": 1712,
+          "y": 746,
+          "customProperties": {
+            "Description": "With the constant evolution of technology, it is necessary to ensure that there is compatibility between the technologies used at the moment and the platforms.",
+            "Dimension": "Sociocultural"
+          }
+        },
+        {
+          "id": "9319c8fe-2b92-4512-af3b-ec758f4afc59",
+          "text": "Diversity of Religions Registration",
+          "type": "istar.Goal",
+          "x": 2324,
+          "y": 573,
+          "customProperties": {
+            "Description": "Religious diversity is the fact that there are significant differences in religious belief and practice. It is important to keep information of the various religions, like monotheistic religions such as Judaism, Christianity, and Islam or polytheistic, as well as their evolutions. May we remember that religious diversity strengthens our communities and promotes tolerance, respect, understanding, and equality. Faith breathes life and hope into our world — we must diligently guard, preserve, and cherish this unalienable right.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "9916b3d0-ff4a-4bd4-9f31-85df5e9d49a6",
+          "text": "Religious Knowledge Provided",
+          "type": "istar.Task",
+          "x": 2208,
+          "y": 756,
+          "customProperties": {
+            "Description": "If the documentation is not safe physically or digitally, and protected, it can be lost forever.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "fba208fc-7471-46da-86d7-26e4e1f509aa",
+          "text": "Religious Experience Provided",
+          "type": "istar.Task",
+          "x": 2323,
+          "y": 756,
+          "customProperties": {
+            "Description": "Religious experience, mystical experience or spiritual experience is a subjective experience in which an individual has an encounter or union with a divine entity, or having had contact with a transcendental reality.\nExamples include experiencing God in nature, in the starry sky, or a flower, or the like.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "fc659bf3-be96-4b74-8e5b-0d42b8694058",
+          "text": "Community Relations Provided",
+          "type": "istar.Task",
+          "x": 2507,
+          "y": 753,
+          "customProperties": {
+            "Description": "The activities lived in community move large numbers of people and create gatherings of crowds in spaces such as churches, chapels, monasteries, convents, etc.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "0023acee-1b47-4541-8fd8-f077a11bb398",
+          "text": "Choir",
+          "type": "istar.Resource",
+          "x": 2444,
+          "y": 926,
+          "customProperties": {
+            "Description": "Generally, religious ceremonies are accompanied by a choir that sings songs related to these ceremonies. In these contexts, the soundscape is associated with the musical heritage described in the field of music.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "a52802d2-3ff3-4b84-8b6d-50b55a63d0ea",
+          "text": " Cults/Rites",
+          "type": "istar.Resource",
+          "x": 2520,
+          "y": 926,
+          "customProperties": {
+            "Description": "Respect for the sacred is manifested in worship, which is the set of religious practices - rites - designed to worship and communicate with the divine. These practices contribute to the alteration of the soundscape.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "aa01a046-e9fc-4fe7-aa48-8f8ad0e499bf",
+          "text": "Faith",
+          "type": "istar.Resource",
+          "x": 2373,
+          "y": 926,
+          "customProperties": {
+            "Description": "Faith, or the search for it, influences people to have certain habits that change their daily lives, such as going to mass, or other places related to religion.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "0c91268f-876d-41dd-95df-e49d2e2650d8",
+          "text": "Beliefs",
+          "type": "istar.Resource",
+          "x": 2300,
+          "y": 926,
+          "customProperties": {
+            "Description": "Religion can be defined as the set of beliefs, actions and experiences, both individual and collective, organized around a concept.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "8ac6f8c2-2bfd-405e-9f19-e8f106991a55",
+          "text": "Scriptures",
+          "type": "istar.Resource",
+          "x": 2222,
+          "y": 926,
+          "customProperties": {
+            "Description": "The scriptures considered sacred are assumed by religions as \"the word of God\", having a great influence on the education and way of living of cultures in society.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "13cb7571-27cd-4a62-b0a2-b9d9c82177d7",
+          "text": "Religious Organizations",
+          "type": "istar.Resource",
+          "x": 2602,
+          "y": 926,
+          "customProperties": {
+            "Description": "Religious organizations are entities that collect contributions for the maintenance of spaces dedicated to religious practice or the exercise of charity. They tend to be non-profit associations and without volunteering from these organizations, the practice of religion would be difficult.",
+            "Dimension": "Religious"
+          }
+        },
+        {
+          "id": "12f29806-83c9-4b3e-bd0e-58233ba8328f",
+          "text": "Prevent the Extintion of a Culture",
+          "type": "istar.Goal",
+          "x": 2959,
+          "y": 575,
+          "customProperties": {
+            "Description": "Cultural extinction is the risk or actuality of complete loss of a culture, which in anthropology is understood as a failure of copying or social learning to replicate a culture.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "f664b038-6a74-4f9c-988a-97a4cacfb048",
+          "text": "Hostile Environment",
+          "type": "istar.Goal",
+          "x": 3114,
+          "y": 577,
+          "customProperties": {
+            "Description": "Some climates and environments are prejudicial to the continuation of a species.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "60d75484-a7c3-4560-8366-032e3a3113e0",
+          "text": "Accuracy",
+          "type": "istar.Quality",
+          "x": 3351,
+          "y": 570,
+          "customProperties": {
+            "Description": "It is crucial to ensure that the historical information we provide is correct and error free. For this, we must consult information from reliable sources.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "d82ab009-4204-4c79-a082-f9349fc222a3",
+          "text": "Accessibility",
+          "type": "istar.Quality",
+          "x": 3630,
+          "y": 571,
+          "customProperties": {
+            "Description": "History is in the past, as such, we can only access its information through records that are available and in good condition.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "7b595bf0-1eb7-4558-8151-d0a5410bea83",
+          "text": "Recoverability",
+          "type": "istar.Quality",
+          "x": 3787,
+          "y": 568,
+          "customProperties": {
+            "Description": "When the cultural heritage is already in a degraded state and is no longer in its original state, it is necessary to resort to the restoration of the works that need it.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "02984a5a-f041-4e6d-99bf-7bcb21573b79",
+          "text": "Inalterability",
+          "type": "istar.Quality",
+          "x": 3883,
+          "y": 570,
+          "customProperties": {
+            "Description": "In order to protect and maintain the unchanging historical heritage, it is necessary to preserve and maintain the preserved and accessible cultural heritage.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "d53cb13c-7306-4867-bcaf-af52ef54dbff",
+          "text": "Good Political Situation",
+          "type": "istar.Goal",
+          "x": 2912,
+          "y": 755,
+          "customProperties": {
+            "Description": "Politics has a major impact on soundscapes as it controls them. The type of regime introduced\nin a place directly influences his security, his freedom, namely for the existence of demonstrations, of manifestations, for artistic expressions, or the mere permission to leave home. Also in war senarios or peace we find specific and quite different soundscapes.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "df4a58b9-10e6-4d83-a90a-b46dc2306ede",
+          "text": "Good Economic Situation",
+          "type": "istar.Goal",
+          "x": 3015,
+          "y": 755,
+          "customProperties": {
+            "Description": "The economic situation of a culture also affects it´s survival, in a way that money allows for basic needs, such as water, food, good infrastructures, safety, health, etc. It also allows that the technology so that the culture is studied, preserved and kept safe.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "22f4b49f-d695-45ad-9fc4-60aefb780859",
+          "text": "Predict and Prevent Catastrofic events",
+          "type": "istar.Goal",
+          "x": 3115,
+          "y": 751,
+          "customProperties": {
+            "Description": "There are ways to predict natural disasters like earthquakes, volcanic eruptions, forest fires and powerful storms, and to give us more warning to prepare for them, largely by using data gathered by satellites from the vantage point of orbital space. There are also ways to avoid human caused disasters, such as reducing the polution caused by men.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3",
+          "text": "Register Historical and Cultural Heritage",
+          "type": "istar.Goal",
+          "x": 2720,
+          "y": 573,
+          "customProperties": {
+            "Description": "Heritage, whether natural, historical or cultural, affects the soundscapes that surround us. This can be done by law,\nheredity or because of the affect of the society in which we operate.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "2b6b5794-477f-4ff3-97ad-0138de9e2273",
+          "text": "Transmition by Heredity",
+          "type": "istar.Goal",
+          "x": 2623,
+          "y": 753,
+          "customProperties": {
+            "Description": "Heredity is the transmission of genetic information from parents to offspring. An inherited trait is one that is genetically determined. Heredity might determine our hair colour or intelligence, our height or skin colour. Also, one can inherit certain abilities, such as the tendency to dancing, singing, or ather capacities.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "d2254d4b-2a0b-4fb5-92d0-5de706d8bdba",
+          "text": "Transmition By Society",
+          "type": "istar.Goal",
+          "x": 2717,
+          "y": 760,
+          "customProperties": {
+            "Description": "Cultural transmission is the process through which cultural elements, in the form of attitudes, values, beliefs, and behavioral scripts, are passed onto and taught to individuals and groups.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "c6bfa6d3-c5b3-4823-8df8-55ff1767bd40",
+          "text": "Inherance by Right",
+          "type": "istar.Goal",
+          "x": 2814,
+          "y": 760,
+          "customProperties": {
+            "Description": "Inheritance rights determine who has the legal right to claim your property after you die. This is more specifically about physical property and possessions, like objects and also people.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "3a9d9fdb-5a3c-4eec-9698-8cfd1e104376",
+          "text": "Age",
+          "type": "istar.Resource",
+          "x": 306,
+          "y": 931,
+          "customProperties": {
+            "Description": "The age of a person affects the contents he consumes, the places he goes to, or even the health and ability to do certain activies. Ex: songs and cartoons for children.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "9d61044a-6355-4cc2-bc92-daaa48c470b2",
+          "text": "Gender",
+          "type": "istar.Resource",
+          "x": 228,
+          "y": 931,
+          "customProperties": {
+            "Description": "Nowadays the differences tend to be fewer, however, gender also affects the way we live. Ex: Decades ago only men would go to war, and be exposed to that particular soundscape. In some countries, women can not live or travel alone, nor have access to education.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "24edb7f7-45d5-468d-b31d-2bd4dcf6c5aa",
+          "text": "Memory",
+          "type": "istar.Resource",
+          "x": 153,
+          "y": 931,
+          "customProperties": {
+            "Description": "Memory is the capacity that the human being has to acquire, store, and retrieve available information, in our brain. It is what allows us to associate a certain sound to a certain place, to a date, to a certain event in our life or to something that we have already heard about, forming the soundscape in our head. Ex: the sound of a toy can awaken in us a memory of our childhood.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "9b61363a-4e01-4e78-afb8-61876aab7c37",
+          "text": "Falsifiability",
+          "type": "istar.Quality",
+          "x": 3214,
+          "y": 748,
+          "customProperties": {
+            "Description": "It is crucial that historical information is truthful and that documents or other types of falsified information are identified or destroyed.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "8bf119fe-9cc0-4ab0-9941-740ac9aa08ec",
+          "text": "Corrigibility",
+          "type": "istar.Quality",
+          "x": 3305,
+          "y": 749,
+          "customProperties": {
+            "Description": "For the information to be as accurate as possible, it is important that it is able to be constantly corrected, improved.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "13976375-2b99-4991-9130-6987e89377c2",
+          "text": "Justifiability",
+          "type": "istar.Quality",
+          "x": 3399,
+          "y": 749,
+          "customProperties": {
+            "Description": "One way to verify that the information is accurate is to confirm that it is justified through evidence and reliable sources of information.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "1e4708e2-6832-4f32-ae32-4b735a2415ce",
+          "text": "Believability",
+          "type": "istar.Quality",
+          "x": 3487,
+          "y": 749,
+          "customProperties": {
+            "Description": "Information sources must be concerned with developing trust in their users, constantly looking for truthful information.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "54302a64-6b42-44b5-b93d-f223cecd0cf9",
+          "text": "Freedom of Information and Expression",
+          "type": "istar.Goal",
+          "x": 3581,
+          "y": 753,
+          "customProperties": {
+            "Description": "Freedom of information and expression is freedom of a person or people to publish and consume information.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "0ddfbf1c-a027-4a61-b455-58ff558ef72a",
+          "text": "Good Information Access",
+          "type": "istar.Goal",
+          "x": 3690,
+          "y": 755,
+          "customProperties": {
+            "Description": "Access to information is the ability for an individual to seek, receive and impart information effectively.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "7e3fdc6d-32c2-4728-85e4-076856a09ee6",
+          "text": "Historical Negationism",
+          "type": "istar.Goal",
+          "x": 3211,
+          "y": 931,
+          "customProperties": {
+            "Description": "Also called denialism, it´s the falsification or distortion of the historical record. Notable examples of negationism include Holocaust and the Armenian genocides denial.\nIn literature, we can imagine the consequences of historical negationism in some works of fiction, such as Nineteen Eighty-Four, by George Orwell. In modern times, negationism may spread via new media, such as the Internet.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "f84ea821-a810-4b91-823b-2e2f5efdb2c9",
+          "text": "Corrected and Improved Information",
+          "type": "istar.Goal",
+          "x": 3304,
+          "y": 928,
+          "customProperties": {
+            "Description": "The constant identification of false historical record and it´s correction is imperative for access to accurate information.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "db405328-ba99-4a1c-ad08-d6cbd6ae7cd6",
+          "text": "Proof",
+          "type": "istar.Goal",
+          "x": 3402,
+          "y": 932,
+          "customProperties": {
+            "Description": "Historical sources include documents, artifacts, archaeological sites, features, oral transmissions, stone inscriptions, paintings, recorded sounds, images (photographs, motion picture), and oral history.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "e6bd55d5-dca6-4215-8268-70f9b9581533",
+          "text": "Trust",
+          "type": "istar.Goal",
+          "x": 3491,
+          "y": 932,
+          "customProperties": {
+            "Description": "History is also what we believe in, and what we are told that happened, so we must be sure in what sources to trust.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "dcc9b422-3d79-47ae-b2f5-16384fed8542",
+          "text": "Heritage Restoration",
+          "type": "istar.Goal",
+          "x": 3786,
+          "y": 757,
+          "customProperties": {
+            "Description": "Restoration is a complex ensemble of actions which can include the integration and replacement of non-original elements, reconstruction, retouching and infilling. It involves the work put into restoring a piece back to its original appearance or function.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "2dcb2b88-be55-4b04-aab0-272bbf231bf4",
+          "text": "Heritage Preservation",
+          "type": "istar.Goal",
+          "x": 3884,
+          "y": 758,
+          "customProperties": {
+            "Description": "The conservation of artwork focuses on preserving the original work.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "03ee443c-97fa-41e8-8891-20e027c79e8f",
+          "text": "Attribution of the Date of an Object, Formation or Occurrence",
+          "type": "istar.Goal",
+          "x": 3982,
+          "y": 572,
+          "customProperties": {
+            "Description": "Dating is the process of attributing to an object or event a date in the past, allowing such object or event to be located in a previously established chronology.\nSeveral dating methods exist, depending on different criteria and techniques, and some very well known examples of disciplines using such techniques are, for example, history, archaeology, geology, paleontology, astronomy and even forensic science, since in the latter it is sometimes necessary to investigate the moment in the past during which the death of a cadaver occurred. These methods are typically identified as absolute, which involves a specified date or date range, or relative, which refers to dating which places artifacts or events on a timeline relative to other events and/or artifacts. Other markers can help place an artifact or event in a chronology, such as nearby writings and stratigraphic markers.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "938d8758-5e12-40c4-80fb-297848e1154a",
+          "text": "Promotability",
+          "type": "istar.Quality",
+          "x": 4219,
+          "y": 572,
+          "customProperties": {
+            "Description": "The historical interest of a place can become popular in other places, increasing the interest in visiting, knowing and exploring, through promotion or advertising that is done from the place to the outside and the reverse as well.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "3b935de0-b24b-4b8f-b2bb-ea2860300860",
+          "text": "Remembering History",
+          "type": "istar.Goal",
+          "x": 4216,
+          "y": 752,
+          "customProperties": {
+            "Description": "Talking about the history and events that occured in the past, allow that the history remains remembered. For example, celebrating the historic dates, like 25 de abril, in portugal.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "9a04d09e-6b71-4784-989d-eb23333d380e",
+          "text": "Attribution of the Localization of an Object, Formation or Occurrence",
+          "type": "istar.Goal",
+          "x": 4101,
+          "y": 571,
+          "customProperties": {
+            "Description": "To locate in space the path from begining to end of an object or event. Where the object is originally form, and where it passed through its existence until now.",
+            "Dimension": "Historical"
+          }
+        },
+        {
+          "id": "4db6f050-71e8-4eb9-8723-4bb4139ace69",
+          "text": "Individual Characteristics",
+          "type": "istar.Task",
+          "x": 168,
+          "y": 748,
+          "customProperties": {
+            "Description": "Individual characteristics affect the way we retrieve the information that sorounds us, and also affects the type of information that is given to us.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "f9790d54-f6df-4203-ba30-b73fe0bb47ea",
+          "text": "Feel Emotion",
+          "type": "istar.Goal",
+          "x": 72,
+          "y": 572,
+          "customProperties": {
+            "Description": "Emotion is the individual reaction that each person has to a certain external stimulus, being linked to the person's temperament and personality. Ex: when we are surprised by a song that moves us positively, the result of that emotion can be expressed through facial and body expressions, and through sounds like crying or laughing.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "de52d223-a172-471e-adee-00ddf86e1a44",
+          "text": "Give Meaning",
+          "type": "istar.Goal",
+          "x": 171,
+          "y": 573,
+          "customProperties": {
+            "Description": "The sense that each gives to things, the relevance, value and importance that is given to something, namely to the history and culture of a country, makes certain people interested in its study and preservation.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "d0d60afe-8c92-4e08-9341-2986807fa60d",
+          "text": "Have Interest",
+          "type": "istar.Goal",
+          "x": 269,
+          "y": 574,
+          "customProperties": {
+            "Description": "Each person has their own individual tastes and interests, and what arouses their curiosity will affect each other's programs and lives.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "50ab3f64-f2cc-4c79-b4a9-4651fed024d7",
+          "text": "Hearing",
+          "type": "istar.Resource",
+          "x": 82,
+          "y": 931,
+          "customProperties": {
+            "Description": "Hearing is one of the five senses that allows us to capture sounds, hearing them and processing them through the ear, which directs them to the central auditory pathways, sending them to the brain to be coded and understood. Without this ability, we would not be able to hear and know the soundscapes.",
+            "Dimension": "Personal"
+          }
+        },
+        {
+          "id": "fb47d6ad-1f72-4077-9655-ec4bb284f92f",
+          "text": "Anthropophony Sounds Categorization",
+          "type": "istar.Task",
+          "x": 7506,
+          "y": 573,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "e8b8a23b-52dc-4204-8363-e3dd90b1246c",
+          "text": "Bronze Sounds",
+          "type": "istar.Resource",
+          "x": 7415,
+          "y": 760,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "5a857457-01a7-4d12-86a2-804c2644d03e",
+          "text": "Belic Sounds",
+          "type": "istar.Resource",
+          "x": 7495,
+          "y": 758,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "5b727308-0b7a-4cab-8057-2f3d67381404",
+          "text": "Musical Practice",
+          "type": "istar.Resource",
+          "x": 7570,
+          "y": 758,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "513190af-737f-4306-a92a-a08c8177b1a1",
+          "text": "Architecture",
+          "type": "istar.Quality",
+          "x": 4316,
+          "y": 570,
+          "customProperties": {
+            "Description": "There are buildings that, due to their architectural style, or other characteristics, lead the population to visit them, such as churches and convents. The architecture of a place increases its historical and cultural interest, contributing to its landscape.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "3c8e9d69-8a2b-404b-97dd-361770d95e4c",
+          "text": "Aesthetics",
+          "type": "istar.Quality",
+          "x": 4413,
+          "y": 570,
+          "customProperties": {
+            "Description": "Aesthetics aims to study nature, beauty and the fundamentals of art, studying the judgment and perception of what is considered beauty. The production of emotions by aesthetic phenomena as well as the different forms of art and artistic technique, the ideas of work, art and creation.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "bb999f8d-f5da-4628-9eac-b2e5199e3edc",
+          "text": "Protection of the Historical Heritage",
+          "type": "istar.Goal",
+          "x": 4356,
+          "y": 752,
+          "customProperties": {
+            "Description": "The interest and effort that seeks to preserve, conserve and protect buildings, objects, landscapes or other artifacts of historical significance. It is a philosophical concept that became popular in the twentieth century, which maintains that cities as products of centuries’ development should be obligated to protect their patrimonial legacy.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+          "text": "Security",
+          "type": "istar.Quality",
+          "x": 4789,
+          "y": 571,
+          "customProperties": {
+            "Description": "Accessibility security ensures access to places without risking health and safety. If a country is unsafe, for example, if there are recurrent terrorist attacks, the soundscape will be affected and people will be afraid to go to these places.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "ad45a5f9-9d4e-4166-84c7-e36e3745eba5",
+          "text": "Autonomy",
+          "type": "istar.Quality",
+          "x": 5215,
+          "y": 571,
+          "customProperties": {
+            "Description": "Autonomy in accessibility is important so that anyone has the possibility of accessing the same sites independently, without needing help from others, through wheelchair ramps, etc. This allows equality for those who want to know the soundscapes of a place.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "d9005575-419d-46f2-9f73-2cbb8f83104c",
+          "text": "Reachability",
+          "type": "istar.Quality",
+          "x": 5356,
+          "y": 571,
+          "customProperties": {
+            "Description": "It is necessary to ensure good infrastructures so that it is possible to reach the different places where we want to go. This can include means of transport, ensuring the supply of essential products, ensuring good construction, and also providing essential basic services such as sanitation. In addition to the fact that these factors enhance the displacement of people to a location, they also have an impact on soundscapes insofar as\ncontribute to the sounds of a place, namely with the sounds of traffic and constructions.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "e3c2d1b6-6d92-4a04-85a3-72d4befaab13",
+          "text": "Acessibility Health",
+          "type": "istar.Quality",
+          "x": 4528,
+          "y": 749,
+          "customProperties": {
+            "Description": "Allows access to a place without putting your health at risk. For example, if a place becomes radioactive, its soundscape will be drastically altered, as in the case of Chernobyl.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "28f23193-4c4d-47f3-98c3-a1a0620c62b4",
+          "text": "Private Security",
+          "type": "istar.Quality",
+          "x": 4628,
+          "y": 750,
+          "customProperties": {
+            "Description": "Private security is usually provided by companies that provide armed or unarmed security services to clients, such as bodyguards, guard dogs, and surveillance and alarm services.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "d6be0996-4f08-48de-a912-c8ac4ac74afb",
+          "text": "National Security",
+          "type": "istar.Quality",
+          "x": 4823,
+          "y": 748,
+          "customProperties": {
+            "Description": "National security or national defense is the security and defense of a nation, which is considered a duty of government. This includes the security of the population, territory, economy, institutions and the preservation of national interests.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "24fde7a3-1825-4602-9d15-a97e62c290ac",
+          "text": "Public Security",
+          "type": "istar.Quality",
+          "x": 5062,
+          "y": 746,
+          "customProperties": {
+            "Description": "Public security's mission is to ensure democratic legality, guarantee the security and rights of citizens, under the terms of the constitution and the law.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "4b8bcdcb-6713-4c35-9a8c-7608f3549469",
+          "text": "Promote the Right of Accessibility for All",
+          "type": "istar.Goal",
+          "x": 5161,
+          "y": 748,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "786f0d7f-d711-4182-89be-90b69998229d",
+          "text": "Ensure Enforcement of Laws",
+          "type": "istar.Goal",
+          "x": 5260,
+          "y": 751,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "06226826-dc1e-4bcf-bf97-95641c53972f",
+          "text": "Good Infrastructure To Get There Easily",
+          "type": "istar.Goal",
+          "x": 5356,
+          "y": 750,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "f5fba01a-9db4-4559-8285-d03f53f527ad",
+          "text": "Territory Integrity",
+          "type": "istar.Goal",
+          "x": 4728,
+          "y": 923,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "ecb8adc9-05cd-4744-a747-c16746f3d29e",
+          "text": "Ensuring the Protection of the Population",
+          "type": "istar.Goal",
+          "x": 4822,
+          "y": 920,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "fa7aeeb1-f65c-442e-9de6-7085d807aaf9",
+          "text": " Preservation of National Interests",
+          "type": "istar.Goal",
+          "x": 4926,
+          "y": 920,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "31f7d0a9-8b1b-419d-a7ab-9be76f9b0d80",
+          "text": "Allow the Use of Rights",
+          "type": "istar.Goal",
+          "x": 5019,
+          "y": 923,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "a8b4e38e-a137-463f-b510-34fc38be2638",
+          "text": "Allow Fulfillment of Duties",
+          "type": "istar.Goal",
+          "x": 5110,
+          "y": 923,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "e0d60a51-2906-47ac-867f-3aa53ea0e60e",
+          "text": "Acessibility Health Risk",
+          "type": "istar.Quality",
+          "x": 4528,
+          "y": 914,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "a4c90594-2932-49c6-bc3d-4aeeec922332",
+          "text": "Protection of Property and People",
+          "type": "istar.Goal",
+          "x": 4626,
+          "y": 919,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "1fe9e574-9205-470e-a1e8-8c95865abb78",
+          "text": "Perception of The Sound",
+          "type": "istar.Goal",
+          "x": 5454,
+          "y": 578,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "da05d13e-a1f2-490a-8374-5835941822d0",
+          "text": "Sound Insulation",
+          "type": "istar.Quality",
+          "x": 5556,
+          "y": 571,
+          "customProperties": {
+            "Description": "Sound isolation is the technique used to prevent the transmission of sound between environments. This is done through the use of different materials that have the property of dissipating sound energy, such as wood, cork, rubber, glass, etc. The type of materials used in a venue will affect its soundscape.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "b4a98058-afa0-40e8-8bdf-55f4652b1272",
+          "text": "Reducing Sound",
+          "type": "istar.Goal",
+          "x": 5553,
+          "y": 762,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "22cf3a78-d021-4ac7-9992-b112b422b795",
+          "text": "Environmentally Friendly",
+          "type": "istar.Quality",
+          "x": 6015,
+          "y": 569,
+          "customProperties": {
+            "Description": "Environmentally friendly processes are sustainability and marketing terms that refer to goods and services, laws, guidelines and policies that require little, minimal or no harm to the environment.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "d7413150-7fa2-4ae8-a49e-a14cc8ed5519",
+          "text": "Ecosystem Sustainability",
+          "type": "istar.Quality",
+          "x": 6271,
+          "y": 571,
+          "customProperties": {
+            "Description": "If an ecosystem is able to maintain all its functions and properties even after the use of its resources by humans, it is called a sustainable ecosystem. Dealing with domestic, industrial and agricultural waste is a growing environmental issue with implications for ecosystems and human health.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "e1a28faf-d12d-4c28-a3a9-0bcdd4682771",
+          "text": "Noise Pollution",
+          "type": "istar.Quality",
+          "x": 5949,
+          "y": 752,
+          "customProperties": {
+            "Description": "There is also sound polishing, which refers to sounds at a certain volume that exceed levels considered normal for human beings, which can damage their hearing.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "18599331-c135-4c25-a7f6-dcffa394844a",
+          "text": "Environmental Pollution",
+          "type": "istar.Quality",
+          "x": 6095,
+          "y": 752,
+          "customProperties": {
+            "Description": "Contamination of the physical and biological components of the earth/atmosphere system to such an extent that normal environmental processes are adversely affected.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "40f497de-5a36-4eb8-94dd-38fc89ba6dca",
+          "text": "Ecosystem Pollution",
+          "type": "istar.Quality",
+          "x": 6273,
+          "y": 753,
+          "customProperties": {
+            "Description": "Pollution is understood as the introduction by man, directly or indirectly, of substances or energy into the environment, causing a negative effect on its balance, thus causing damage to human health, living beings and ecosystems – thus altering the soundscape.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "3330818f-5bd6-4720-abaf-c3f5a97c7309",
+          "text": "Human and Animals risk of Deasese or Death",
+          "type": "istar.Goal",
+          "x": 5949,
+          "y": 919,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "45a1afae-7451-4210-b0cb-092556671c2f",
+          "text": "Ensure Future Generations live an Equal or Better Life",
+          "type": "istar.Goal",
+          "x": 6046,
+          "y": 920,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "f01bc2eb-0cf8-4725-a46d-ec4f45f50be1",
+          "text": "Protect Earth´s Atmosphere",
+          "type": "istar.Goal",
+          "x": 6146,
+          "y": 925,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "fb7e7394-e79e-4836-abad-6da663b02be8",
+          "text": "Efficiency",
+          "type": "istar.Quality",
+          "x": 6383,
+          "y": 569,
+          "customProperties": {
+            "Description": "The economic efficiency of systems refers to their ability to generate more value and less losses.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "4449543b-9ebc-4671-847b-98bdd80c3665",
+          "text": "Effectiveness",
+          "type": "istar.Quality",
+          "x": 6384,
+          "y": 752,
+          "customProperties": {
+            "Description": "Effectiveness is the precision and integrity with which users achieve the specified objectives. When eliciting efficiency requirements, needs must be considered in terms of response time, throughput, process capacity and storage capacity.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "a7e194a6-cdb6-4f90-8b78-5b786ddc0f45",
+          "text": "Protect Health of Ecosystems",
+          "type": "istar.Goal",
+          "x": 6239,
+          "y": 923,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "9a048c59-a379-4cea-86ea-e8743d021cb4",
+          "text": "Keep The Nature´s Diversity",
+          "type": "istar.Goal",
+          "x": 6331,
+          "y": 924,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "8134ee3f-f5ec-4664-ae73-c6c66b29b959",
+          "text": "Finantial Management",
+          "type": "istar.Goal",
+          "x": 6600,
+          "y": 571,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "604c99ee-bf51-426f-b662-59bac8f47742",
+          "text": "Maintainability",
+          "type": "istar.Quality",
+          "x": 6724,
+          "y": 570,
+          "customProperties": {
+            "Description": "Maintainability is an inherent characteristic of a project or product, which refers to the capacity, ease, precision, safety and economy in carrying out maintenance actions for that system or product. The maintenance and conservation, both of software platforms, as well as physical spaces, or even products used related to soundscapes, have their associated costs.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "f25523b2-aaeb-4ac3-b8e4-cede3b0379ad",
+          "text": "Legalization of the company",
+          "type": "istar.Goal",
+          "x": 6485,
+          "y": 757,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "660546a8-aafb-4386-8c62-e007a2a3d56b",
+          "text": "Investment",
+          "type": "istar.Goal",
+          "x": 6574,
+          "y": 763,
+          "customProperties": {
+            "Description": "Economic capital corresponds to the command of economic resources such as money and possessions. For everything (or almost) to happen, economic power is needed, eg, paying artists.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "02854a24-7691-476d-87d8-83079b825189",
+          "text": "Reduced Expenses",
+          "type": "istar.Goal",
+          "x": 6659,
+          "y": 762,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "53b6855c-3bdf-47bd-86d2-1a326320de5f",
+          "text": "Maximize Efficiency, Reliability, Safety",
+          "type": "istar.Goal",
+          "x": 6764,
+          "y": 754,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "43703233-e9c9-405e-bd8f-010ac673ab74",
+          "text": "Analyze Business Feasibility",
+          "type": "istar.Goal",
+          "x": 6831,
+          "y": 572,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "766eba5c-ede7-48f7-84be-dbe7c145b84d",
+          "text": "Support Entrepreneurship Projects",
+          "type": "istar.Goal",
+          "x": 6930,
+          "y": 571,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "454c2efd-ea38-4f2c-a8dc-4bcac721f571",
+          "text": "Provide Work Oportunities",
+          "type": "istar.Goal",
+          "x": 7127,
+          "y": 578,
+          "customProperties": {
+            "Description": "The study of soundscapes not only depends on the work of the people involved, but also generates new jobs.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "d16ab33b-e66e-458d-ad47-dba73ce63b04",
+          "text": "Tourism Growth",
+          "type": "istar.Goal",
+          "x": 7030,
+          "y": 578,
+          "customProperties": {
+            "Description": "The study, preservation and sharing of the cultural heritage of a place, also enhances the visit of these places, which contributes to the increase in tourism and which consequently constitutes an improvement in the economy.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "3877f408-6ffb-4a00-ab9d-4b590b379dc0",
+          "text": "Good Image",
+          "type": "istar.Goal",
+          "x": 6931,
+          "y": 756,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "2269331d-5c41-4f97-a01a-db8b864cc72b",
+          "text": "Disclosure",
+          "type": "istar.Goal",
+          "x": 7029,
+          "y": 755,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "b977f5a9-a6bd-4c03-807a-7a60da62a016",
+          "text": "Provide Good Services",
+          "type": "istar.Goal",
+          "x": 7126,
+          "y": 756,
+          "customProperties": {
+            "Description": "The study and interest in soundscapes increases the commerce of the places that are visited, such as restaurants, coffe shops, markets, stores, etc.",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "ce36c2b8-cb39-4549-8494-ddfd0aff4aa6",
+          "text": "Reliable Infrastructures and Facilities",
+          "type": "istar.Goal",
+          "x": 7262,
+          "y": 577,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "09e4917e-1ed4-4a6b-956f-667880fb3b63",
+          "text": "Educaction Oportunities",
+          "type": "istar.Goal",
+          "x": 7318,
+          "y": 759,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "cf87f9e8-b45c-4d98-809f-2838421a082c",
+          "text": "Health Care Oportunities",
+          "type": "istar.Goal",
+          "x": 7223,
+          "y": 759,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "6597151d-8f1a-4c3d-b3e4-af7461f13a63",
+          "text": "Health Improvement",
+          "type": "istar.Goal",
+          "x": 7222,
+          "y": 927,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Economic"
+          }
+        },
+        {
+          "id": "6112d9ba-ddbd-4daf-8f16-135dcf599f0a",
+          "text": "Others",
+          "type": "istar.Resource",
+          "x": 7651,
+          "y": 758,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Sonorous"
+          }
+        },
+        {
+          "id": "d8c897be-6c7e-4ed7-a031-f527a3df4b31",
+          "text": "Placeability",
+          "type": "istar.Quality",
+          "x": 5753,
+          "y": 378,
+          "customProperties": {
+            "Description": "The ability to know that a particular place exists, where precisely and what we can find if we visit it.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "a682be48-bd02-48ca-bc11-6131a8998759",
+          "text": "Location",
+          "type": "istar.Quality",
+          "x": 5653,
+          "y": 571,
+          "customProperties": {
+            "Description": "In order to be able to move to a location, it is necessary to determine the location of a physical space on the map, through coordinates.\nThe set of characteristics of a given location, and all the sounds, which, coming from different sources, and although some are easily distinguishable from each other, coexist in the same space, being simultaneously present in a single place, form a unique soundscape .",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "b569e11c-7559-43fd-aa4a-38ca85d496c8",
+          "text": "Globalization",
+          "type": "istar.Quality",
+          "x": 5751,
+          "y": 571,
+          "customProperties": {
+            "Description": "Globalization is a process of movements and exchanges (of human beings, goods and services, capital, technologies or cultural practices) throughout the world. Thus, international knowledge and deepening of economic, social, cultural and political integration is enhanced, increasing communication and interactions between different regions and populations, contributing to the knowledge, diversity and enrichment of soundscapes.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "5bcbb038-f6c5-4cb0-b9d4-4cd14a047d36",
+          "text": "Preservation",
+          "type": "istar.Quality",
+          "x": 5849,
+          "y": 570,
+          "customProperties": {
+            "Description": "The concern with preserving the heritage of the places has been growing, to maintain the landscapes, tradition and traits that represent the history and culture of a place. Ex: through protected heritage, it is possible to maintain the differences between the places that make them unique, for example, the houses in Serra da Estrela, whose alterations must be approved.",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "67493b42-48be-40cb-b025-b44d5a89125e",
+          "text": "Access to Places Geographic Localization",
+          "type": "istar.Goal",
+          "x": 5651,
+          "y": 753,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "9328d665-ac83-424d-8432-caa14a64dbb5",
+          "text": "Global Interconnectivity",
+          "type": "istar.Goal",
+          "x": 5755,
+          "y": 755,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        },
+        {
+          "id": "e081d2a2-1a0b-4aec-a5e4-355188e18af8",
+          "text": "Maintain Diversity of Locations",
+          "type": "istar.Goal",
+          "x": 5850,
+          "y": 757,
+          "customProperties": {
+            "Description": "",
+            "Dimension": "Spatial"
+          }
+        }
+      ]
+    }
+  ],
+  "orphans": [],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "6f161085-8792-4f35-8c68-11b6161f8b06",
+      "type": "istar.ContributionLink",
+      "source": "fd78827d-324f-40cb-a400-7dc657112a1d",
+      "target": "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b",
+      "label": "make"
+    },
+    {
+      "id": "666c10b4-3e6a-44f7-ba55-4969f81173eb",
+      "type": "istar.ContributionLink",
+      "source": "a63b3f7a-782d-4edd-8ea0-8985253a7bb6",
+      "target": "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b",
+      "label": "make"
+    },
+    {
+      "id": "adc710e6-e10f-4dd8-990f-1ac959fddd4c",
+      "type": "istar.ContributionLink",
+      "source": "ffbde67d-5fea-4e02-a48b-fa598f354324",
+      "target": "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b",
+      "label": "make"
+    },
+    {
+      "id": "da3abcf5-a9cf-4eaf-968c-acd4dffa6798",
+      "type": "istar.ContributionLink",
+      "source": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "make"
+    },
+    {
+      "id": "21c5d005-375d-420d-929b-2149177a7614",
+      "type": "istar.ContributionLink",
+      "source": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "make"
+    },
+    {
+      "id": "ff761a67-db5c-4790-a0fa-aadf49d122c5",
+      "type": "istar.ContributionLink",
+      "source": "5355c61a-2aff-4f2a-ae21-f4fdd40e1a33",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "help"
+    },
+    {
+      "id": "3ca96839-69e9-4300-bb4f-1a011f35f435",
+      "type": "istar.ContributionLink",
+      "source": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "make"
+    },
+    {
+      "id": "7b6809b4-0a44-4d03-b79a-d62a1097f5b8",
+      "type": "istar.ContributionLink",
+      "source": "b6e04683-fce6-40f1-a6c5-5d402602292a",
+      "target": "5355c61a-2aff-4f2a-ae21-f4fdd40e1a33",
+      "label": "help"
+    },
+    {
+      "id": "5c2c2eef-9d71-4c2a-917d-56ca51c64ec7",
+      "type": "istar.ContributionLink",
+      "source": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "make"
+    },
+    {
+      "id": "6558de06-e70b-45c7-a582-463c3345633a",
+      "type": "istar.ContributionLink",
+      "source": "ecc9fc2c-836c-4bdf-b65f-bb1950c918de",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "9ea88a82-a0ba-4d52-9f8e-75d6b24131f0",
+      "type": "istar.ContributionLink",
+      "source": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "713283d2-8f83-4181-bece-195742545440",
+      "type": "istar.ContributionLink",
+      "source": "84443b25-db2f-4b63-90b0-3749983c8938",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "85d88c62-dd77-4bc3-9a8c-1a2f9587ccc6",
+      "type": "istar.ContributionLink",
+      "source": "0d125719-cc55-483b-bc0d-74c995f06be6",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "25437316-8630-4e9d-90c6-90a269e89cbc",
+      "type": "istar.ContributionLink",
+      "source": "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "88d0fd18-1a45-4944-8849-15e6579ad570",
+      "type": "istar.ContributionLink",
+      "source": "562f3064-bab0-41cf-9675-2520f0c690ac",
+      "target": "1c932337-570b-45e0-8b32-26b22d21ce93",
+      "label": "make"
+    },
+    {
+      "id": "935a2d5a-17ac-41b2-babf-00988af742cb",
+      "type": "istar.ContributionLink",
+      "source": "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "4457f54c-8ee2-4468-865a-c18b5213922f",
+      "type": "istar.ContributionLink",
+      "source": "562f3064-bab0-41cf-9675-2520f0c690ac",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "084fce39-ac59-42a3-8561-c01fe1423f82",
+      "type": "istar.ContributionLink",
+      "source": "7806c637-bbbd-4e26-aeb5-f278755e689e",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "4496fb3c-437c-4446-9aa5-4e849b0cca47",
+      "type": "istar.ContributionLink",
+      "source": "7fbf0a9c-03bf-4eab-b129-aebec087e8ea",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "2947b8a2-b0fb-41e0-a91d-c8ed1bc227a8",
+      "type": "istar.ContributionLink",
+      "source": "670611ee-5062-4fb7-b4eb-441b796548a0",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "8ec5d584-db71-4a4c-866d-3e4bc796bf0a",
+      "type": "istar.ContributionLink",
+      "source": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "3d3fa460-b194-4ebc-bf90-fc2c25fd2deb",
+      "type": "istar.ContributionLink",
+      "source": "3686161e-dada-4926-a879-401e36058137",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "092755bb-352f-4596-b0c8-dc18abccb445",
+      "type": "istar.ContributionLink",
+      "source": "ee145fbc-54c0-4ba2-b20b-3f9dcc5cbbb9",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "b92952f2-7f13-4571-a51d-f064bc882865",
+      "type": "istar.ContributionLink",
+      "source": "848cc220-db96-490f-9d32-13edcca61504",
+      "target": "558b9468-5103-4b71-9818-64bf660eb2cd",
+      "label": "make"
+    },
+    {
+      "id": "5b7aeb27-4adb-47d2-8c15-a1727bae1ebf",
+      "type": "istar.ContributionLink",
+      "source": "848cc220-db96-490f-9d32-13edcca61504",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "5f405e0b-4813-42e8-834a-c0828c698f55",
+      "type": "istar.ContributionLink",
+      "source": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+      "target": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "label": "make"
+    },
+    {
+      "id": "9a9806c5-718b-4968-8534-7e87d5ba34c9",
+      "type": "istar.ContributionLink",
+      "source": "e7dff419-7d76-40e4-8bde-70941f45e5fa",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "94897d89-1a68-4ffd-a135-7d933854fc02",
+      "type": "istar.ContributionLink",
+      "source": "08b65380-18de-4a27-8d61-f1172a07155b",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "ef0ad2c1-17e7-4ad8-a638-cd363adb58be",
+      "type": "istar.ContributionLink",
+      "source": "5a1e35ea-1f95-46ae-a5ae-59d67f59efd8",
+      "target": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "label": "make"
+    },
+    {
+      "id": "5e14fe1d-380e-4c5f-90d4-03610f4de3c7",
+      "type": "istar.ContributionLink",
+      "source": "415c5a3e-58d9-43c3-b958-e4fed64e726b",
+      "target": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "label": "make"
+    },
+    {
+      "id": "670830ac-ec98-4b61-9d98-36d386d4f6cc",
+      "type": "istar.ContributionLink",
+      "source": "600c683f-9f1b-4890-b77f-cc18345b5ca8",
+      "target": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "label": "make"
+    },
+    {
+      "id": "d27f7b32-596f-4859-b282-91390a9585f5",
+      "type": "istar.ContributionLink",
+      "source": "29d78c2f-2b2e-46fb-a408-ba4aa3f2527d",
+      "target": "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6",
+      "label": "make"
+    },
+    {
+      "id": "2a233ee4-cc7b-4b84-8899-9e83661cbf2c",
+      "type": "istar.ContributionLink",
+      "source": "0e5ddf69-87bb-4a8c-b070-8f383881a867",
+      "target": "ecc9fc2c-836c-4bdf-b65f-bb1950c918de",
+      "label": "make"
+    },
+    {
+      "id": "710b8631-2c0b-4ec6-8488-304ac98eecab",
+      "type": "istar.ContributionLink",
+      "source": "9e966519-dc67-4b3d-b88c-d0c5eb9a69ec",
+      "target": "ecc9fc2c-836c-4bdf-b65f-bb1950c918de",
+      "label": "make"
+    },
+    {
+      "id": "8cb198fc-a333-48c1-946d-7c81c9bf374d",
+      "type": "istar.ContributionLink",
+      "source": "0d0ae6ed-e705-4715-98cd-1f502fd0e394",
+      "target": "ecc9fc2c-836c-4bdf-b65f-bb1950c918de",
+      "label": "help"
+    },
+    {
+      "id": "0a6cbfb8-fe8c-436d-93b1-5b37b5ab58fa",
+      "type": "istar.ContributionLink",
+      "source": "25f23cbc-146f-44aa-96fd-84df887bf59b",
+      "target": "84443b25-db2f-4b63-90b0-3749983c8938",
+      "label": "make"
+    },
+    {
+      "id": "6198c47c-a681-419c-8149-10807be3adfc",
+      "type": "istar.ContributionLink",
+      "source": "79014765-cb64-41f8-8a26-2fdd17365aa9",
+      "target": "84443b25-db2f-4b63-90b0-3749983c8938",
+      "label": "make"
+    },
+    {
+      "id": "7d8e9df7-b984-43ac-a64f-dc5171919875",
+      "type": "istar.ContributionLink",
+      "source": "df1654f9-7fda-4a6d-9866-d76be77b8905",
+      "target": "84443b25-db2f-4b63-90b0-3749983c8938",
+      "label": "help"
+    },
+    {
+      "id": "d790746b-1fb6-4022-b518-4109f967ab5d",
+      "type": "istar.ContributionLink",
+      "source": "01e861ff-3d22-4eab-8e2a-0486dbe9e679",
+      "target": "0d125719-cc55-483b-bc0d-74c995f06be6",
+      "label": "help"
+    },
+    {
+      "id": "72e3aac3-3290-4e4d-a93e-3e66af9eb3a7",
+      "type": "istar.ContributionLink",
+      "source": "65b84e1c-cdf2-4de8-a026-efa807a56cd7",
+      "target": "0d125719-cc55-483b-bc0d-74c995f06be6",
+      "label": "help"
+    },
+    {
+      "id": "57a6fb32-a389-42a1-b40e-0f5f43ed3cbe",
+      "type": "istar.ContributionLink",
+      "source": "0dbcb368-8d0b-417d-a124-ef8e9bc36759",
+      "target": "0d125719-cc55-483b-bc0d-74c995f06be6",
+      "label": "help"
+    },
+    {
+      "id": "9595d28d-89e1-4d5a-9a78-da3b304df853",
+      "type": "istar.ContributionLink",
+      "source": "1e159bf5-f064-47bc-b1e6-d3488c91b634",
+      "target": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+      "label": "make"
+    },
+    {
+      "id": "a3b3a8ac-762e-4631-8240-2a6e4195ed37",
+      "type": "istar.ContributionLink",
+      "source": "9c0dffa7-2606-4d01-9e53-0f0d58c7769a",
+      "target": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+      "label": "make"
+    },
+    {
+      "id": "4d04d974-a861-4405-8e6d-816b216bb8fb",
+      "type": "istar.ContributionLink",
+      "source": "f49595c4-29ba-4083-8d52-133ac04da16e",
+      "target": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+      "label": "make"
+    },
+    {
+      "id": "64ef0118-ccd8-4287-a2a4-9b56057105c2",
+      "type": "istar.ContributionLink",
+      "source": "2dcaa186-91b7-484e-b67e-de98e73f41ad",
+      "target": "03940d55-430c-4b31-8f0a-ee3f11f77e5b",
+      "label": "make"
+    },
+    {
+      "id": "c0269792-7cc6-4d92-a651-2a72299f1d34",
+      "type": "istar.ContributionLink",
+      "source": "1e159bf5-f064-47bc-b1e6-d3488c91b634",
+      "target": "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5",
+      "label": "make"
+    },
+    {
+      "id": "1880adf7-9c6b-45f5-9780-6f9a24b0505a",
+      "type": "istar.ContributionLink",
+      "source": "c237b50c-64e1-4a10-8130-a900f2879c27",
+      "target": "1e159bf5-f064-47bc-b1e6-d3488c91b634",
+      "label": "help"
+    },
+    {
+      "id": "bc4152a5-9f1f-4421-ac6b-377636866063",
+      "type": "istar.ContributionLink",
+      "source": "9aeaaecc-bf9a-4dda-ab4a-0676c74de084",
+      "target": "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5",
+      "label": "help"
+    },
+    {
+      "id": "933c5867-bfc3-4e1d-8779-75f886861c99",
+      "type": "istar.AndRefinementLink",
+      "source": "a32055e8-0b6c-4bbe-8f68-4722927085ef",
+      "target": "9aeaaecc-bf9a-4dda-ab4a-0676c74de084"
+    },
+    {
+      "id": "cd42cce5-8a37-4e58-9107-82441c498e3e",
+      "type": "istar.NeededByLink",
+      "source": "58de3315-0bd7-47e1-b57f-3a520c579329",
+      "target": "a32055e8-0b6c-4bbe-8f68-4722927085ef"
+    },
+    {
+      "id": "0672cbec-9081-4695-ab29-0347db8fd6a4",
+      "type": "istar.NeededByLink",
+      "source": "dba70be8-8df9-48b4-b7a0-aa85bab317c8",
+      "target": "a32055e8-0b6c-4bbe-8f68-4722927085ef"
+    },
+    {
+      "id": "3d55c06f-363f-4a94-849b-50f07fee0871",
+      "type": "istar.NeededByLink",
+      "source": "9899c791-4437-48ca-9e86-c7aeae13ac1b",
+      "target": "a32055e8-0b6c-4bbe-8f68-4722927085ef"
+    },
+    {
+      "id": "84b91d20-47bc-4210-99c0-7be0c4f5fbee",
+      "type": "istar.NeededByLink",
+      "source": "16ee29a8-d2ba-4d98-a798-9d3849b6856c",
+      "target": "a32055e8-0b6c-4bbe-8f68-4722927085ef"
+    },
+    {
+      "id": "0012e6b6-5697-4352-be13-d4286d583df6",
+      "type": "istar.ContributionLink",
+      "source": "000eca0a-75c8-4811-aa0e-d70fe21449c6",
+      "target": "0e5ddf69-87bb-4a8c-b070-8f383881a867",
+      "label": "help"
+    },
+    {
+      "id": "4567a8c5-1a0b-482c-9ee3-a6b30f1ddd58",
+      "type": "istar.ContributionLink",
+      "source": "4d4c508b-208f-4a5b-9cd1-d7b89ba78bfc",
+      "target": "0d0ae6ed-e705-4715-98cd-1f502fd0e394",
+      "label": "help"
+    },
+    {
+      "id": "d58c94fb-96cb-4fa7-add7-3a37ec3ee3f2",
+      "type": "istar.ContributionLink",
+      "source": "53d6145e-77e2-4333-9105-5b547f97b92e",
+      "target": "0d0ae6ed-e705-4715-98cd-1f502fd0e394",
+      "label": "help"
+    },
+    {
+      "id": "e02f99d4-d2ed-4dab-9ac4-6b103b262985",
+      "type": "istar.ContributionLink",
+      "source": "8ce6a405-fffb-4255-8a09-351b21ee92e4",
+      "target": "9e966519-dc67-4b3d-b88c-d0c5eb9a69ec",
+      "label": "make"
+    },
+    {
+      "id": "aa971697-0eb0-4644-9518-da568053bfa0",
+      "type": "istar.ContributionLink",
+      "source": "bf709edd-89e0-4ce8-9856-9b52966571d0",
+      "target": "9e966519-dc67-4b3d-b88c-d0c5eb9a69ec",
+      "label": "make"
+    },
+    {
+      "id": "225fc24a-469e-409f-9342-e216fbdb9959",
+      "type": "istar.ContributionLink",
+      "source": "e23d1652-11cb-4cf6-ba14-f69fd7b20f27",
+      "target": "25f23cbc-146f-44aa-96fd-84df887bf59b",
+      "label": "help"
+    },
+    {
+      "id": "e8792c74-2d12-45c2-aec4-c7b01755758a",
+      "type": "istar.ContributionLink",
+      "source": "89ea4c4b-4e38-40cf-957e-8be66ef6047f",
+      "target": "79014765-cb64-41f8-8a26-2fdd17365aa9",
+      "label": "make"
+    },
+    {
+      "id": "4b328414-f032-4a4f-a3b7-24a574ac4d95",
+      "type": "istar.ContributionLink",
+      "source": "f2f3bf02-c3b8-443a-b2b8-29ce4f6a46b7",
+      "target": "79014765-cb64-41f8-8a26-2fdd17365aa9",
+      "label": "make"
+    },
+    {
+      "id": "e78c60aa-d531-40d3-b629-e2ef2cdd672f",
+      "type": "istar.OrRefinementLink",
+      "source": "c829258e-129d-476c-839d-ddace6734614",
+      "target": "01e861ff-3d22-4eab-8e2a-0486dbe9e679"
+    },
+    {
+      "id": "2e10dade-db2c-46d9-a3ce-e515709588ee",
+      "type": "istar.OrRefinementLink",
+      "source": "6b11d59e-fac1-4913-81ab-a12a3d6f765d",
+      "target": "01e861ff-3d22-4eab-8e2a-0486dbe9e679"
+    },
+    {
+      "id": "09a8c510-6b4f-4626-b6fc-f98c2bfd2bd8",
+      "type": "istar.OrRefinementLink",
+      "source": "8fc5cf18-f573-4a09-90fc-ab432c2a3481",
+      "target": "01e861ff-3d22-4eab-8e2a-0486dbe9e679"
+    },
+    {
+      "id": "41cda845-1765-421e-9463-b68609757527",
+      "type": "istar.AndRefinementLink",
+      "source": "0263767b-6c2c-41d5-be13-e51645ae8b4b",
+      "target": "65b84e1c-cdf2-4de8-a026-efa807a56cd7"
+    },
+    {
+      "id": "076e59b8-3d0a-4c03-8bfe-93ebde5ef439",
+      "type": "istar.AndRefinementLink",
+      "source": "ae2ad8fd-4687-44d5-9eae-a318d9d2cb83",
+      "target": "0dbcb368-8d0b-417d-a124-ef8e9bc36759"
+    },
+    {
+      "id": "86798058-81e2-4343-89e6-bf87b2871770",
+      "type": "istar.ContributionLink",
+      "source": "13c9562a-31df-4794-b7a8-70e87d41b501",
+      "target": "9c0dffa7-2606-4d01-9e53-0f0d58c7769a",
+      "label": "make"
+    },
+    {
+      "id": "56739b94-7da6-49a5-a55e-9adc5e1f89b4",
+      "type": "istar.ContributionLink",
+      "source": "9319c8fe-2b92-4512-af3b-ec758f4afc59",
+      "target": "562f3064-bab0-41cf-9675-2520f0c690ac",
+      "label": "help"
+    },
+    {
+      "id": "1851037c-c09b-4251-9762-9fd86916a957",
+      "type": "istar.OrRefinementLink",
+      "source": "9916b3d0-ff4a-4bd4-9f31-85df5e9d49a6",
+      "target": "9319c8fe-2b92-4512-af3b-ec758f4afc59"
+    },
+    {
+      "id": "c6e2ea57-63a5-4b9b-a041-a2103335a923",
+      "type": "istar.OrRefinementLink",
+      "source": "fba208fc-7471-46da-86d7-26e4e1f509aa",
+      "target": "9319c8fe-2b92-4512-af3b-ec758f4afc59"
+    },
+    {
+      "id": "7cb29d01-79f4-4bc5-980a-db0552e20fac",
+      "type": "istar.OrRefinementLink",
+      "source": "fc659bf3-be96-4b74-8e5b-0d42b8694058",
+      "target": "9319c8fe-2b92-4512-af3b-ec758f4afc59"
+    },
+    {
+      "id": "f5380344-0501-40f4-b930-e2744c216f2c",
+      "type": "istar.NeededByLink",
+      "source": "8ac6f8c2-2bfd-405e-9f19-e8f106991a55",
+      "target": "9916b3d0-ff4a-4bd4-9f31-85df5e9d49a6"
+    },
+    {
+      "id": "9ec8dd0a-7ba1-4346-a06d-e549bbb63b7d",
+      "type": "istar.NeededByLink",
+      "source": "13cb7571-27cd-4a62-b0a2-b9d9c82177d7",
+      "target": "fc659bf3-be96-4b74-8e5b-0d42b8694058"
+    },
+    {
+      "id": "cf9347c0-bca4-40d8-9dec-0c410cf2bddc",
+      "type": "istar.NeededByLink",
+      "source": "a52802d2-3ff3-4b84-8b6d-50b55a63d0ea",
+      "target": "fc659bf3-be96-4b74-8e5b-0d42b8694058"
+    },
+    {
+      "id": "ce3a9392-dd8d-4af8-9b76-c470dbaf3311",
+      "type": "istar.NeededByLink",
+      "source": "0023acee-1b47-4541-8fd8-f077a11bb398",
+      "target": "fc659bf3-be96-4b74-8e5b-0d42b8694058"
+    },
+    {
+      "id": "ec81ede4-bd01-48e1-80e4-feff69ee0ab0",
+      "type": "istar.NeededByLink",
+      "source": "aa01a046-e9fc-4fe7-aa48-8f8ad0e499bf",
+      "target": "fba208fc-7471-46da-86d7-26e4e1f509aa"
+    },
+    {
+      "id": "6e3a4afa-5660-452c-9759-2df1eca78e49",
+      "type": "istar.NeededByLink",
+      "source": "0c91268f-876d-41dd-95df-e49d2e2650d8",
+      "target": "fba208fc-7471-46da-86d7-26e4e1f509aa"
+    },
+    {
+      "id": "93332812-3d45-4d8d-a67c-84672a457262",
+      "type": "istar.ContributionLink",
+      "source": "12f29806-83c9-4b3e-bd0e-58233ba8328f",
+      "target": "7806c637-bbbd-4e26-aeb5-f278755e689e",
+      "label": "help"
+    },
+    {
+      "id": "d0443a90-ecbf-4413-828a-5ea9c8ff36a4",
+      "type": "istar.ContributionLink",
+      "source": "60d75484-a7c3-4560-8366-032e3a3113e0",
+      "target": "7fbf0a9c-03bf-4eab-b129-aebec087e8ea",
+      "label": "help"
+    },
+    {
+      "id": "7ee2b62b-121b-4537-9002-f6ed42cac2f3",
+      "type": "istar.ContributionLink",
+      "source": "d82ab009-4204-4c79-a082-f9349fc222a3",
+      "target": "7fbf0a9c-03bf-4eab-b129-aebec087e8ea",
+      "label": "help"
+    },
+    {
+      "id": "9d50cfbe-4b86-40b6-9b3c-5829ae9826d4",
+      "type": "istar.ContributionLink",
+      "source": "7b595bf0-1eb7-4558-8151-d0a5410bea83",
+      "target": "670611ee-5062-4fb7-b4eb-441b796548a0",
+      "label": "help"
+    },
+    {
+      "id": "87b80d0a-9383-4bd1-aa11-d24dd31a6d03",
+      "type": "istar.ContributionLink",
+      "source": "02984a5a-f041-4e6d-99bf-7bcb21573b79",
+      "target": "670611ee-5062-4fb7-b4eb-441b796548a0",
+      "label": "help"
+    },
+    {
+      "id": "bccac6f0-57a1-4367-bf13-ac08b8471209",
+      "type": "istar.AndRefinementLink",
+      "source": "d53cb13c-7306-4867-bcaf-af52ef54dbff",
+      "target": "12f29806-83c9-4b3e-bd0e-58233ba8328f"
+    },
+    {
+      "id": "90edb76a-0f19-4256-b566-d3b4b14064df",
+      "type": "istar.AndRefinementLink",
+      "source": "df4a58b9-10e6-4d83-a90a-b46dc2306ede",
+      "target": "12f29806-83c9-4b3e-bd0e-58233ba8328f"
+    },
+    {
+      "id": "cc4af1a4-0580-4d50-8a45-25f97800a5dd",
+      "type": "istar.AndRefinementLink",
+      "source": "22f4b49f-d695-45ad-9fc4-60aefb780859",
+      "target": "f664b038-6a74-4f9c-988a-97a4cacfb048"
+    },
+    {
+      "id": "8acb8fe0-f6be-4f50-b0be-0928ab62f291",
+      "type": "istar.ContributionLink",
+      "source": "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3",
+      "target": "ee145fbc-54c0-4ba2-b20b-3f9dcc5cbbb9",
+      "label": "help"
+    },
+    {
+      "id": "32b4db39-9372-4844-b951-4464c11cf7b0",
+      "type": "istar.OrRefinementLink",
+      "source": "2b6b5794-477f-4ff3-97ad-0138de9e2273",
+      "target": "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3"
+    },
+    {
+      "id": "ba3b59d8-67e6-4209-9060-3830a3c26cb1",
+      "type": "istar.OrRefinementLink",
+      "source": "d2254d4b-2a0b-4fb5-92d0-5de706d8bdba",
+      "target": "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3"
+    },
+    {
+      "id": "2f475657-b2f2-4057-b00d-0fcb7cb49574",
+      "type": "istar.OrRefinementLink",
+      "source": "c6bfa6d3-c5b3-4823-8df8-55ff1767bd40",
+      "target": "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3"
+    },
+    {
+      "id": "cab8d7ac-6242-4ae2-8ffe-7f3a904e0c63",
+      "type": "istar.ContributionLink",
+      "source": "8bf119fe-9cc0-4ab0-9941-740ac9aa08ec",
+      "target": "60d75484-a7c3-4560-8366-032e3a3113e0",
+      "label": "make"
+    },
+    {
+      "id": "310cde8c-e017-424f-8c32-6e855ed96008",
+      "type": "istar.ContributionLink",
+      "source": "9b61363a-4e01-4e78-afb8-61876aab7c37",
+      "target": "60d75484-a7c3-4560-8366-032e3a3113e0",
+      "label": "hurt"
+    },
+    {
+      "id": "9794c1e7-9a32-4b53-b314-485d796ab7a2",
+      "type": "istar.ContributionLink",
+      "source": "13976375-2b99-4991-9130-6987e89377c2",
+      "target": "60d75484-a7c3-4560-8366-032e3a3113e0",
+      "label": "help"
+    },
+    {
+      "id": "2c269729-1fe3-4fae-8f3c-1f621e9e92b9",
+      "type": "istar.ContributionLink",
+      "source": "1e4708e2-6832-4f32-ae32-4b735a2415ce",
+      "target": "60d75484-a7c3-4560-8366-032e3a3113e0",
+      "label": "help"
+    },
+    {
+      "id": "eacb61a4-bd71-4623-ad98-c2fe67ea8317",
+      "type": "istar.ContributionLink",
+      "source": "54302a64-6b42-44b5-b93d-f223cecd0cf9",
+      "target": "d82ab009-4204-4c79-a082-f9349fc222a3",
+      "label": "help"
+    },
+    {
+      "id": "ac09a762-458c-40de-92bb-56707bcb7787",
+      "type": "istar.ContributionLink",
+      "source": "0ddfbf1c-a027-4a61-b455-58ff558ef72a",
+      "target": "d82ab009-4204-4c79-a082-f9349fc222a3",
+      "label": "help"
+    },
+    {
+      "id": "719d16e5-39db-4ca6-b1bc-7a5525e16545",
+      "type": "istar.ContributionLink",
+      "source": "7e3fdc6d-32c2-4728-85e4-076856a09ee6",
+      "target": "9b61363a-4e01-4e78-afb8-61876aab7c37",
+      "label": "help"
+    },
+    {
+      "id": "35b69bff-ecd8-435d-8979-07facfc95f69",
+      "type": "istar.ContributionLink",
+      "source": "f84ea821-a810-4b91-823b-2e2f5efdb2c9",
+      "target": "8bf119fe-9cc0-4ab0-9941-740ac9aa08ec",
+      "label": "help"
+    },
+    {
+      "id": "bc7b8e58-85d8-4d86-82e4-473757f9e4df",
+      "type": "istar.ContributionLink",
+      "source": "db405328-ba99-4a1c-ad08-d6cbd6ae7cd6",
+      "target": "13976375-2b99-4991-9130-6987e89377c2",
+      "label": "help"
+    },
+    {
+      "id": "d6d7de0d-cd2d-4ace-a186-f64728295d55",
+      "type": "istar.ContributionLink",
+      "source": "e6bd55d5-dca6-4215-8268-70f9b9581533",
+      "target": "1e4708e2-6832-4f32-ae32-4b735a2415ce",
+      "label": "help"
+    },
+    {
+      "id": "c9c05a27-f7e2-41b8-ba5d-bfeff371f07f",
+      "type": "istar.ContributionLink",
+      "source": "dcc9b422-3d79-47ae-b2f5-16384fed8542",
+      "target": "7b595bf0-1eb7-4558-8151-d0a5410bea83",
+      "label": "help"
+    },
+    {
+      "id": "df3d57f8-468a-4aee-92ad-62263eea1b73",
+      "type": "istar.ContributionLink",
+      "source": "2dcb2b88-be55-4b04-aab0-272bbf231bf4",
+      "target": "02984a5a-f041-4e6d-99bf-7bcb21573b79",
+      "label": "help"
+    },
+    {
+      "id": "f716ebf9-52d7-47a7-99fe-37eb168b1994",
+      "type": "istar.ContributionLink",
+      "source": "938d8758-5e12-40c4-80fb-297848e1154a",
+      "target": "848cc220-db96-490f-9d32-13edcca61504",
+      "label": "help"
+    },
+    {
+      "id": "bc32d010-5946-4c5f-bb91-d98e108eb588",
+      "type": "istar.ContributionLink",
+      "source": "03ee443c-97fa-41e8-8891-20e027c79e8f",
+      "target": "848cc220-db96-490f-9d32-13edcca61504",
+      "label": "help"
+    },
+    {
+      "id": "ec2546af-3e0e-4f98-b8e0-55b229d7d4ad",
+      "type": "istar.ContributionLink",
+      "source": "3b935de0-b24b-4b8f-b2bb-ea2860300860",
+      "target": "938d8758-5e12-40c4-80fb-297848e1154a",
+      "label": "help"
+    },
+    {
+      "id": "8a8673dc-950f-48cc-ab0e-fba498e57e2e",
+      "type": "istar.ContributionLink",
+      "source": "9a04d09e-6b71-4784-989d-eb23333d380e",
+      "target": "848cc220-db96-490f-9d32-13edcca61504",
+      "label": "help"
+    },
+    {
+      "id": "661a79b4-2bca-4c15-928b-f0e757d8e83d",
+      "type": "istar.NeededByLink",
+      "source": "9d61044a-6355-4cc2-bc92-daaa48c470b2",
+      "target": "4db6f050-71e8-4eb9-8723-4bb4139ace69"
+    },
+    {
+      "id": "efcd90bc-b18c-46a4-bec3-7680ce1ac570",
+      "type": "istar.NeededByLink",
+      "source": "24edb7f7-45d5-468d-b31d-2bd4dcf6c5aa",
+      "target": "4db6f050-71e8-4eb9-8723-4bb4139ace69"
+    },
+    {
+      "id": "57d3fc02-698b-4eaf-8130-1e3d40b1bfd3",
+      "type": "istar.NeededByLink",
+      "source": "3a9d9fdb-5a3c-4eec-9698-8cfd1e104376",
+      "target": "4db6f050-71e8-4eb9-8723-4bb4139ace69"
+    },
+    {
+      "id": "1f294a93-a079-4652-8a04-b92741a2fc72",
+      "type": "istar.AndRefinementLink",
+      "source": "4db6f050-71e8-4eb9-8723-4bb4139ace69",
+      "target": "f9790d54-f6df-4203-ba30-b73fe0bb47ea"
+    },
+    {
+      "id": "9b3e7d11-d119-431a-9a54-6427bc9b6180",
+      "type": "istar.AndRefinementLink",
+      "source": "4db6f050-71e8-4eb9-8723-4bb4139ace69",
+      "target": "de52d223-a172-471e-adee-00ddf86e1a44"
+    },
+    {
+      "id": "2453174a-4fe0-4d08-9cd3-96843520d69c",
+      "type": "istar.AndRefinementLink",
+      "source": "4db6f050-71e8-4eb9-8723-4bb4139ace69",
+      "target": "d0d60afe-8c92-4e08-9341-2986807fa60d"
+    },
+    {
+      "id": "9049838a-4204-4d2e-94db-0e546fcce9ac",
+      "type": "istar.ContributionLink",
+      "source": "f9790d54-f6df-4203-ba30-b73fe0bb47ea",
+      "target": "b6e04683-fce6-40f1-a6c5-5d402602292a",
+      "label": "help"
+    },
+    {
+      "id": "3019e3f4-41cb-4700-b117-1265f7dff6aa",
+      "type": "istar.ContributionLink",
+      "source": "de52d223-a172-471e-adee-00ddf86e1a44",
+      "target": "b6e04683-fce6-40f1-a6c5-5d402602292a",
+      "label": "help"
+    },
+    {
+      "id": "f1a1ac28-95c5-43f8-8fab-f3e025cdb35d",
+      "type": "istar.ContributionLink",
+      "source": "d0d60afe-8c92-4e08-9341-2986807fa60d",
+      "target": "b6e04683-fce6-40f1-a6c5-5d402602292a",
+      "label": "help"
+    },
+    {
+      "id": "f72352d1-1bb4-4190-96a6-eafc07f85f09",
+      "type": "istar.NeededByLink",
+      "source": "50ab3f64-f2cc-4c79-b4a9-4651fed024d7",
+      "target": "4db6f050-71e8-4eb9-8723-4bb4139ace69"
+    },
+    {
+      "id": "54bf3598-bb89-476d-89cd-34cb068087c2",
+      "type": "istar.NeededByLink",
+      "source": "e8b8a23b-52dc-4204-8363-e3dd90b1246c",
+      "target": "fb47d6ad-1f72-4077-9655-ec4bb284f92f"
+    },
+    {
+      "id": "7ac5c7ec-a694-494e-89bc-c05def28d790",
+      "type": "istar.NeededByLink",
+      "source": "5a857457-01a7-4d12-86a2-804c2644d03e",
+      "target": "fb47d6ad-1f72-4077-9655-ec4bb284f92f"
+    },
+    {
+      "id": "24d8f599-eefe-49d1-911d-cb7cf8b5e9d3",
+      "type": "istar.NeededByLink",
+      "source": "5b727308-0b7a-4cab-8057-2f3d67381404",
+      "target": "fb47d6ad-1f72-4077-9655-ec4bb284f92f"
+    },
+    {
+      "id": "a8f13f13-a11b-46a9-9cea-3c9d6eb997a7",
+      "type": "istar.ContributionLink",
+      "source": "513190af-737f-4306-a92a-a08c8177b1a1",
+      "target": "e7dff419-7d76-40e4-8bde-70941f45e5fa",
+      "label": "help"
+    },
+    {
+      "id": "72e604a5-e0f5-4230-a8fc-8d2efdac39f2",
+      "type": "istar.ContributionLink",
+      "source": "3c8e9d69-8a2b-404b-97dd-361770d95e4c",
+      "target": "e7dff419-7d76-40e4-8bde-70941f45e5fa",
+      "label": "make"
+    },
+    {
+      "id": "e087114b-2621-4fd3-bb06-f2e21758a0a3",
+      "type": "istar.ContributionLink",
+      "source": "bb999f8d-f5da-4628-9eac-b2e5199e3edc",
+      "target": "513190af-737f-4306-a92a-a08c8177b1a1",
+      "label": "make"
+    },
+    {
+      "id": "520c5915-2010-45c4-b321-c88a682864e0",
+      "type": "istar.ContributionLink",
+      "source": "bb999f8d-f5da-4628-9eac-b2e5199e3edc",
+      "target": "3c8e9d69-8a2b-404b-97dd-361770d95e4c",
+      "label": "make"
+    },
+    {
+      "id": "4cb28184-ad4b-4d8b-ac06-562176aa7316",
+      "type": "istar.ContributionLink",
+      "source": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+      "target": "3686161e-dada-4926-a879-401e36058137",
+      "label": "make"
+    },
+    {
+      "id": "2b43906d-960b-48eb-986a-9fba8db1b38d",
+      "type": "istar.ContributionLink",
+      "source": "ad45a5f9-9d4e-4166-84c7-e36e3745eba5",
+      "target": "3686161e-dada-4926-a879-401e36058137",
+      "label": "make"
+    },
+    {
+      "id": "1454cd85-b62f-48d3-a7c4-5ecf49184787",
+      "type": "istar.ContributionLink",
+      "source": "d9005575-419d-46f2-9f73-2cbb8f83104c",
+      "target": "3686161e-dada-4926-a879-401e36058137",
+      "label": "make"
+    },
+    {
+      "id": "4cc59689-3a56-45e2-925d-45e34962ff33",
+      "type": "istar.ContributionLink",
+      "source": "e3c2d1b6-6d92-4a04-85a3-72d4befaab13",
+      "target": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+      "label": "help"
+    },
+    {
+      "id": "67b8e14a-ad22-4fee-9078-bd253cbb43ec",
+      "type": "istar.ContributionLink",
+      "source": "28f23193-4c4d-47f3-98c3-a1a0620c62b4",
+      "target": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+      "label": "make"
+    },
+    {
+      "id": "348b4b62-676d-4adb-a5fa-dcf8a4635305",
+      "type": "istar.ContributionLink",
+      "source": "d6be0996-4f08-48de-a912-c8ac4ac74afb",
+      "target": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+      "label": "make"
+    },
+    {
+      "id": "a39f6373-78a8-4ffe-8aff-4b36b475efe2",
+      "type": "istar.ContributionLink",
+      "source": "24fde7a3-1825-4602-9d15-a97e62c290ac",
+      "target": "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb",
+      "label": "make"
+    },
+    {
+      "id": "64d12cf2-f1ca-4f0c-8cda-365f52e43ba9",
+      "type": "istar.ContributionLink",
+      "source": "f5fba01a-9db4-4559-8285-d03f53f527ad",
+      "target": "d6be0996-4f08-48de-a912-c8ac4ac74afb",
+      "label": "make"
+    },
+    {
+      "id": "591dd3f6-1810-4c03-b8c3-a868bb7722bd",
+      "type": "istar.ContributionLink",
+      "source": "ecb8adc9-05cd-4744-a747-c16746f3d29e",
+      "target": "d6be0996-4f08-48de-a912-c8ac4ac74afb",
+      "label": "make"
+    },
+    {
+      "id": "5974abbe-6979-4c33-996d-a871a91b2007",
+      "type": "istar.ContributionLink",
+      "source": "fa7aeeb1-f65c-442e-9de6-7085d807aaf9",
+      "target": "d6be0996-4f08-48de-a912-c8ac4ac74afb",
+      "label": "make"
+    },
+    {
+      "id": "dfc4e189-b5ff-4f04-8b04-72b310f57041",
+      "type": "istar.ContributionLink",
+      "source": "31f7d0a9-8b1b-419d-a7ab-9be76f9b0d80",
+      "target": "24fde7a3-1825-4602-9d15-a97e62c290ac",
+      "label": "make"
+    },
+    {
+      "id": "85bf255b-d737-46b9-846f-eb6d02eb8b1e",
+      "type": "istar.ContributionLink",
+      "source": "a8b4e38e-a137-463f-b510-34fc38be2638",
+      "target": "24fde7a3-1825-4602-9d15-a97e62c290ac",
+      "label": "make"
+    },
+    {
+      "id": "e28ebd27-6ab2-469d-b79c-0d5875de62a5",
+      "type": "istar.ContributionLink",
+      "source": "06226826-dc1e-4bcf-bf97-95641c53972f",
+      "target": "d9005575-419d-46f2-9f73-2cbb8f83104c",
+      "label": "make"
+    },
+    {
+      "id": "bd27148f-f6fb-4d10-9d87-e200b2f74953",
+      "type": "istar.ContributionLink",
+      "source": "786f0d7f-d711-4182-89be-90b69998229d",
+      "target": "ad45a5f9-9d4e-4166-84c7-e36e3745eba5",
+      "label": "make"
+    },
+    {
+      "id": "134d802a-2c7b-40ad-b817-11a2f3696e07",
+      "type": "istar.ContributionLink",
+      "source": "4b8bcdcb-6713-4c35-9a8c-7608f3549469",
+      "target": "ad45a5f9-9d4e-4166-84c7-e36e3745eba5",
+      "label": "help"
+    },
+    {
+      "id": "09c43f34-32ba-4822-a7fd-28d8752ecf32",
+      "type": "istar.ContributionLink",
+      "source": "e0d60a51-2906-47ac-867f-3aa53ea0e60e",
+      "target": "e3c2d1b6-6d92-4a04-85a3-72d4befaab13",
+      "label": "hurt"
+    },
+    {
+      "id": "2ee7b113-f806-4582-81cc-c2c35edc7678",
+      "type": "istar.ContributionLink",
+      "source": "a4c90594-2932-49c6-bc3d-4aeeec922332",
+      "target": "28f23193-4c4d-47f3-98c3-a1a0620c62b4",
+      "label": "help"
+    },
+    {
+      "id": "0681fe6f-6fc3-4e9c-8fe1-c7971c7d4be1",
+      "type": "istar.ContributionLink",
+      "source": "b4a98058-afa0-40e8-8bdf-55f4652b1272",
+      "target": "da05d13e-a1f2-490a-8374-5835941822d0",
+      "label": "help"
+    },
+    {
+      "id": "368fae5c-5bd0-42ab-9585-b97ac8048d4c",
+      "type": "istar.ContributionLink",
+      "source": "da05d13e-a1f2-490a-8374-5835941822d0",
+      "target": "08b65380-18de-4a27-8d61-f1172a07155b",
+      "label": "hurt"
+    },
+    {
+      "id": "0a053b99-9c6d-4336-a88f-96028970f326",
+      "type": "istar.ContributionLink",
+      "source": "1fe9e574-9205-470e-a1e8-8c95865abb78",
+      "target": "08b65380-18de-4a27-8d61-f1172a07155b",
+      "label": "make"
+    },
+    {
+      "id": "18c45cd7-2bf3-4bd4-ab0d-36bf1667d99d",
+      "type": "istar.ContributionLink",
+      "source": "fb47d6ad-1f72-4077-9655-ec4bb284f92f",
+      "target": "fd78827d-324f-40cb-a400-7dc657112a1d",
+      "label": "help"
+    },
+    {
+      "id": "2eabf7a1-bb96-447b-be5e-f87fa164828c",
+      "type": "istar.ContributionLink",
+      "source": "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b",
+      "target": "3ee97cda-ec71-49e1-9845-387e5dd67dea",
+      "label": "make"
+    },
+    {
+      "id": "2ae7f132-5e8c-481f-9f00-e2a59fd554c9",
+      "type": "istar.ContributionLink",
+      "source": "fb7e7394-e79e-4836-abad-6da663b02be8",
+      "target": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+      "label": "make"
+    },
+    {
+      "id": "10d11630-0cbe-4136-a72d-1c5b0f5bb76d",
+      "type": "istar.ContributionLink",
+      "source": "4449543b-9ebc-4671-847b-98bdd80c3665",
+      "target": "fb7e7394-e79e-4836-abad-6da663b02be8",
+      "label": "make"
+    },
+    {
+      "id": "13f6c56a-9016-4757-9b8e-bb3264ec5c63",
+      "type": "istar.ContributionLink",
+      "source": "22cf3a78-d021-4ac7-9992-b112b422b795",
+      "target": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+      "label": "make"
+    },
+    {
+      "id": "e39157bf-32da-4851-a71c-81973bdd8ba1",
+      "type": "istar.ContributionLink",
+      "source": "d7413150-7fa2-4ae8-a49e-a14cc8ed5519",
+      "target": "fa70b8eb-0501-4600-bbe6-a82046d48669",
+      "label": "make"
+    },
+    {
+      "id": "b3abe837-e5c1-470f-8a34-a04a8d95996a",
+      "type": "istar.ContributionLink",
+      "source": "e1a28faf-d12d-4c28-a3a9-0bcdd4682771",
+      "target": "22cf3a78-d021-4ac7-9992-b112b422b795",
+      "label": "hurt"
+    },
+    {
+      "id": "aedcb1e7-20fa-4f64-93d4-2c454eb9ee12",
+      "type": "istar.ContributionLink",
+      "source": "18599331-c135-4c25-a7f6-dcffa394844a",
+      "target": "22cf3a78-d021-4ac7-9992-b112b422b795",
+      "label": "hurt"
+    },
+    {
+      "id": "2fa0bb4b-d3a5-4742-860b-b91c56b4b49b",
+      "type": "istar.ContributionLink",
+      "source": "3330818f-5bd6-4720-abaf-c3f5a97c7309",
+      "target": "e1a28faf-d12d-4c28-a3a9-0bcdd4682771",
+      "label": "make"
+    },
+    {
+      "id": "bd5e0b72-44e1-4eee-80ef-b572fa9afeeb",
+      "type": "istar.ContributionLink",
+      "source": "45a1afae-7451-4210-b0cb-092556671c2f",
+      "target": "18599331-c135-4c25-a7f6-dcffa394844a",
+      "label": "break"
+    },
+    {
+      "id": "ccd8048c-87dc-4791-b824-b743e0592323",
+      "type": "istar.ContributionLink",
+      "source": "f01bc2eb-0cf8-4725-a46d-ec4f45f50be1",
+      "target": "18599331-c135-4c25-a7f6-dcffa394844a",
+      "label": "break"
+    },
+    {
+      "id": "03b53b6d-9c17-4141-8e17-05cc223cc8fd",
+      "type": "istar.ContributionLink",
+      "source": "40f497de-5a36-4eb8-94dd-38fc89ba6dca",
+      "target": "d7413150-7fa2-4ae8-a49e-a14cc8ed5519",
+      "label": "hurt"
+    },
+    {
+      "id": "1a8f32f0-ca6d-456c-a3a6-60902736866b",
+      "type": "istar.ContributionLink",
+      "source": "a7e194a6-cdb6-4f90-8b78-5b786ddc0f45",
+      "target": "40f497de-5a36-4eb8-94dd-38fc89ba6dca",
+      "label": "break"
+    },
+    {
+      "id": "f8cf2496-19fb-41d7-aea4-46bbd86ea8b0",
+      "type": "istar.ContributionLink",
+      "source": "9a048c59-a379-4cea-86ea-e8743d021cb4",
+      "target": "40f497de-5a36-4eb8-94dd-38fc89ba6dca",
+      "label": "hurt"
+    },
+    {
+      "id": "46aca5f1-8d93-4ca0-a7e7-e866dbe5865f",
+      "type": "istar.ContributionLink",
+      "source": "43703233-e9c9-405e-bd8f-010ac673ab74",
+      "target": "415c5a3e-58d9-43c3-b958-e4fed64e726b",
+      "label": "make"
+    },
+    {
+      "id": "9c14fbc7-8ddc-492c-818f-d36d1b0cec09",
+      "type": "istar.ContributionLink",
+      "source": "766eba5c-ede7-48f7-84be-dbe7c145b84d",
+      "target": "415c5a3e-58d9-43c3-b958-e4fed64e726b",
+      "label": "make"
+    },
+    {
+      "id": "c777d30f-16b5-42f1-af69-8bfcc238226c",
+      "type": "istar.ContributionLink",
+      "source": "604c99ee-bf51-426f-b662-59bac8f47742",
+      "target": "5a1e35ea-1f95-46ae-a5ae-59d67f59efd8",
+      "label": "make"
+    },
+    {
+      "id": "a9cd0c82-da50-4f2a-aa99-45172e714c6d",
+      "type": "istar.ContributionLink",
+      "source": "8134ee3f-f5ec-4664-ae73-c6c66b29b959",
+      "target": "5a1e35ea-1f95-46ae-a5ae-59d67f59efd8",
+      "label": "make"
+    },
+    {
+      "id": "ee2698ca-c8e5-4da5-b3c1-5d660639c9ee",
+      "type": "istar.OrRefinementLink",
+      "source": "f25523b2-aaeb-4ac3-b8e4-cede3b0379ad",
+      "target": "8134ee3f-f5ec-4664-ae73-c6c66b29b959"
+    },
+    {
+      "id": "001fc78a-67bf-49c8-87bd-8e8960e1f3b5",
+      "type": "istar.OrRefinementLink",
+      "source": "660546a8-aafb-4386-8c62-e007a2a3d56b",
+      "target": "8134ee3f-f5ec-4664-ae73-c6c66b29b959"
+    },
+    {
+      "id": "6a667cd5-aca3-45a9-8cc2-eb8b1c876854",
+      "type": "istar.OrRefinementLink",
+      "source": "02854a24-7691-476d-87d8-83079b825189",
+      "target": "8134ee3f-f5ec-4664-ae73-c6c66b29b959"
+    },
+    {
+      "id": "453aa578-5135-410f-b84c-13d73f6ad6b5",
+      "type": "istar.ContributionLink",
+      "source": "454c2efd-ea38-4f2c-a8dc-4bcac721f571",
+      "target": "600c683f-9f1b-4890-b77f-cc18345b5ca8",
+      "label": "help"
+    },
+    {
+      "id": "20b91117-4241-48d4-af00-cfc492bfe404",
+      "type": "istar.ContributionLink",
+      "source": "d16ab33b-e66e-458d-ad47-dba73ce63b04",
+      "target": "600c683f-9f1b-4890-b77f-cc18345b5ca8",
+      "label": "help"
+    },
+    {
+      "id": "1d03909c-1537-474a-942c-a5f5a4e92268",
+      "type": "istar.OrRefinementLink",
+      "source": "3877f408-6ffb-4a00-ab9d-4b590b379dc0",
+      "target": "d16ab33b-e66e-458d-ad47-dba73ce63b04"
+    },
+    {
+      "id": "6e8779f0-5ac4-4dc3-aa07-f5dff9f03461",
+      "type": "istar.OrRefinementLink",
+      "source": "2269331d-5c41-4f97-a01a-db8b864cc72b",
+      "target": "d16ab33b-e66e-458d-ad47-dba73ce63b04"
+    },
+    {
+      "id": "a4150b62-2a58-4b6a-ba6a-28008ae66807",
+      "type": "istar.OrRefinementLink",
+      "source": "b977f5a9-a6bd-4c03-807a-7a60da62a016",
+      "target": "d16ab33b-e66e-458d-ad47-dba73ce63b04"
+    },
+    {
+      "id": "9934debd-4131-446f-b7bc-774695a6a53b",
+      "type": "istar.ContributionLink",
+      "source": "ce36c2b8-cb39-4549-8494-ddfd0aff4aa6",
+      "target": "29d78c2f-2b2e-46fb-a408-ba4aa3f2527d",
+      "label": "make"
+    },
+    {
+      "id": "cbd28b64-620b-483b-ba5a-c06afacf88c6",
+      "type": "istar.OrRefinementLink",
+      "source": "cf87f9e8-b45c-4d98-809f-2838421a082c",
+      "target": "ce36c2b8-cb39-4549-8494-ddfd0aff4aa6"
+    },
+    {
+      "id": "79928da9-f6a1-4eca-b36b-d4516c8b9202",
+      "type": "istar.OrRefinementLink",
+      "source": "09e4917e-1ed4-4a6b-956f-667880fb3b63",
+      "target": "ce36c2b8-cb39-4549-8494-ddfd0aff4aa6"
+    },
+    {
+      "id": "50ace559-da8c-4867-9063-dc151b171b27",
+      "type": "istar.AndRefinementLink",
+      "source": "6597151d-8f1a-4c3d-b3e4-af7461f13a63",
+      "target": "cf87f9e8-b45c-4d98-809f-2838421a082c"
+    },
+    {
+      "id": "62d52104-30f7-430f-9068-9e607f715c35",
+      "type": "istar.NeededByLink",
+      "source": "6112d9ba-ddbd-4daf-8f16-135dcf599f0a",
+      "target": "fb47d6ad-1f72-4077-9655-ec4bb284f92f"
+    },
+    {
+      "id": "2e340630-88da-4521-862c-af0f88b92581",
+      "type": "istar.ContributionLink",
+      "source": "a682be48-bd02-48ca-bc11-6131a8998759",
+      "target": "d8c897be-6c7e-4ed7-a031-f527a3df4b31",
+      "label": "make"
+    },
+    {
+      "id": "9e6c4ceb-5d2a-46ff-bf84-e3de5ff7a075",
+      "type": "istar.ContributionLink",
+      "source": "b569e11c-7559-43fd-aa4a-38ca85d496c8",
+      "target": "d8c897be-6c7e-4ed7-a031-f527a3df4b31",
+      "label": "make"
+    },
+    {
+      "id": "cb182f23-49e5-4e15-aede-9baf610f128a",
+      "type": "istar.ContributionLink",
+      "source": "5bcbb038-f6c5-4cb0-b9d4-4cd14a047d36",
+      "target": "d8c897be-6c7e-4ed7-a031-f527a3df4b31",
+      "label": "make"
+    },
+    {
+      "id": "de0a8f72-4d9d-4e19-aa26-ac70065857d3",
+      "type": "istar.ContributionLink",
+      "source": "67493b42-48be-40cb-b025-b44d5a89125e",
+      "target": "a682be48-bd02-48ca-bc11-6131a8998759",
+      "label": "make"
+    },
+    {
+      "id": "75ff02de-d3b6-413c-9383-edf92e892cf7",
+      "type": "istar.ContributionLink",
+      "source": "9328d665-ac83-424d-8432-caa14a64dbb5",
+      "target": "b569e11c-7559-43fd-aa4a-38ca85d496c8",
+      "label": "make"
+    },
+    {
+      "id": "cf1ca7ef-0900-4d61-b105-fcc807c81d0f",
+      "type": "istar.ContributionLink",
+      "source": "e081d2a2-1a0b-4aec-a5e4-355188e18af8",
+      "target": "5bcbb038-f6c5-4cb0-b9d4-4cd14a047d36",
+      "label": "help"
+    },
+    {
+      "id": "47a77f60-995a-40bd-b54f-58a4ab5bd1c2",
+      "type": "istar.ContributionLink",
+      "source": "d8c897be-6c7e-4ed7-a031-f527a3df4b31",
+      "target": "331f1fd1-46cd-4c79-b06a-d444a45b3b43",
+      "label": "make"
+    },
+    {
+      "id": "afc3ea3f-3b89-437a-a21c-d20308967be4",
+      "type": "istar.ContributionLink",
+      "source": "f664b038-6a74-4f9c-988a-97a4cacfb048",
+      "target": "7806c637-bbbd-4e26-aeb5-f278755e689e",
+      "label": "hurt"
+    },
+    {
+      "id": "9fee9553-90c4-4b58-b1e4-7d453f46dcde",
+      "type": "istar.ContributionLink",
+      "source": "53b6855c-3bdf-47bd-86d2-1a326320de5f",
+      "target": "604c99ee-bf51-426f-b662-59bac8f47742",
+      "label": "make"
+    }
+  ],
+  "display": {
+    "ecc68215-ac8b-4837-9d76-e299b114b4d3": {
+      "backgroundColor": "#FFF904"
+    },
+    "1c932337-570b-45e0-8b32-26b22d21ce93": {
+      "backgroundColor": "#FFA500"
+    },
+    "558b9468-5103-4b71-9818-64bf660eb2cd": {
+      "backgroundColor": "#FB351D"
+    },
+    "562f3064-bab0-41cf-9675-2520f0c690ac": {
+      "backgroundColor": "#FFF060"
+    },
+    "65aa37e9-3e4b-4c2c-97b9-63cd15f699c6": {
+      "backgroundColor": "#CEED5C"
+    },
+    "331f1fd1-46cd-4c79-b06a-d444a45b3b43": {
+      "backgroundColor": "#00BEB6"
+    },
+    "5355c61a-2aff-4f2a-ae21-f4fdd40e1a33": {
+      "backgroundColor": "#F69AE0"
+    },
+    "d438c0cd-ad2d-43a1-9db6-fa2b70a91ba5": {
+      "backgroundColor": "#914BF6"
+    },
+    "f9a4ae7d-4bf6-40b6-b753-ab52173aff4b": {
+      "backgroundColor": "#17A3FF"
+    },
+    "ffbde67d-5fea-4e02-a48b-fa598f354324": {
+      "backgroundColor": "#17A3FF"
+    },
+    "a63b3f7a-782d-4edd-8ea0-8985253a7bb6": {
+      "backgroundColor": "#17A3FF"
+    },
+    "fd78827d-324f-40cb-a400-7dc657112a1d": {
+      "backgroundColor": "#17A3FF",
+      "width": 99.4749755859375,
+      "height": 56.5059814453125
+    },
+    "3ee97cda-ec71-49e1-9845-387e5dd67dea": {
+      "backgroundColor": "#BEBDBB"
+    },
+    "b6e04683-fce6-40f1-a6c5-5d402602292a": {
+      "backgroundColor": "#F69AE0"
+    },
+    "ecc9fc2c-836c-4bdf-b65f-bb1950c918de": {
+      "backgroundColor": "#FFA500"
+    },
+    "03940d55-430c-4b31-8f0a-ee3f11f77e5b": {
+      "backgroundColor": "#FFA500"
+    },
+    "84443b25-db2f-4b63-90b0-3749983c8938": {
+      "backgroundColor": "#FFA500"
+    },
+    "0d125719-cc55-483b-bc0d-74c995f06be6": {
+      "backgroundColor": "#FFA500"
+    },
+    "7806c637-bbbd-4e26-aeb5-f278755e689e": {
+      "backgroundColor": "#FB351D"
+    },
+    "7fbf0a9c-03bf-4eab-b129-aebec087e8ea": {
+      "backgroundColor": "#FB351D"
+    },
+    "670611ee-5062-4fb7-b4eb-441b796548a0": {
+      "backgroundColor": "#FB351D"
+    },
+    "fa70b8eb-0501-4600-bbe6-a82046d48669": {
+      "backgroundColor": "#0EBE85"
+    },
+    "3686161e-dada-4926-a879-401e36058137": {
+      "backgroundColor": "#00BEB6"
+    },
+    "ee145fbc-54c0-4ba2-b20b-3f9dcc5cbbb9": {
+      "backgroundColor": "#FB351D"
+    },
+    "848cc220-db96-490f-9d32-13edcca61504": {
+      "backgroundColor": "#FB351D"
+    },
+    "e7dff419-7d76-40e4-8bde-70941f45e5fa": {
+      "backgroundColor": "#00BEB6"
+    },
+    "08b65380-18de-4a27-8d61-f1172a07155b": {
+      "backgroundColor": "#00BEB6"
+    },
+    "5a1e35ea-1f95-46ae-a5ae-59d67f59efd8": {
+      "backgroundColor": "#CEED5C"
+    },
+    "415c5a3e-58d9-43c3-b958-e4fed64e726b": {
+      "backgroundColor": "#CEED5C",
+      "width": 109.173583984375,
+      "height": 55.00579833984375
+    },
+    "29d78c2f-2b2e-46fb-a408-ba4aa3f2527d": {
+      "backgroundColor": "#CEED5C"
+    },
+    "600c683f-9f1b-4890-b77f-cc18345b5ca8": {
+      "backgroundColor": "#CEED5C"
+    },
+    "0d0ae6ed-e705-4715-98cd-1f502fd0e394": {
+      "backgroundColor": "#FFA500"
+    },
+    "0e5ddf69-87bb-4a8c-b070-8f383881a867": {
+      "backgroundColor": "#FFA500"
+    },
+    "9e966519-dc67-4b3d-b88c-d0c5eb9a69ec": {
+      "backgroundColor": "#FFA500",
+      "width": 105.67218017578125,
+      "height": 55.00567626953125
+    },
+    "25f23cbc-146f-44aa-96fd-84df887bf59b": {
+      "backgroundColor": "#FFA500"
+    },
+    "79014765-cb64-41f8-8a26-2fdd17365aa9": {
+      "backgroundColor": "#FFA500"
+    },
+    "df1654f9-7fda-4a6d-9866-d76be77b8905": {
+      "backgroundColor": "#FFA500",
+      "width": 81.9453125,
+      "height": 44.5
+    },
+    "01e861ff-3d22-4eab-8e2a-0486dbe9e679": {
+      "backgroundColor": "#FFA500",
+      "width": 84.4453125,
+      "height": 45
+    },
+    "65b84e1c-cdf2-4de8-a026-efa807a56cd7": {
+      "backgroundColor": "#FFA500",
+      "width": 81.4453125,
+      "height": 46
+    },
+    "0dbcb368-8d0b-417d-a124-ef8e9bc36759": {
+      "backgroundColor": "#FFA500",
+      "width": 91.4453125,
+      "height": 44
+    },
+    "1e159bf5-f064-47bc-b1e6-d3488c91b634": {
+      "backgroundColor": "#DBA2FF"
+    },
+    "9c0dffa7-2606-4d01-9e53-0f0d58c7769a": {
+      "backgroundColor": "#FFA500"
+    },
+    "f49595c4-29ba-4083-8d52-133ac04da16e": {
+      "backgroundColor": "#FFA500"
+    },
+    "2dcaa186-91b7-484e-b67e-de98e73f41ad": {
+      "backgroundColor": "#FFA500"
+    },
+    "c237b50c-64e1-4a10-8130-a900f2879c27": {
+      "backgroundColor": "#914BF6",
+      "width": 92.4453125,
+      "height": 41.5
+    },
+    "9aeaaecc-bf9a-4dda-ab4a-0676c74de084": {
+      "backgroundColor": "#914BF6",
+      "width": 90.9453125,
+      "height": 51.5
+    },
+    "58de3315-0bd7-47e1-b57f-3a520c579329": {
+      "backgroundColor": "#914BF6",
+      "width": 69.9453125,
+      "height": 36
+    },
+    "a32055e8-0b6c-4bbe-8f68-4722927085ef": {
+      "backgroundColor": "#914BF6",
+      "width": 93.9453125,
+      "height": 48.5
+    },
+    "9899c791-4437-48ca-9e86-c7aeae13ac1b": {
+      "backgroundColor": "#914BF6",
+      "width": 70.4453125
+    },
+    "dba70be8-8df9-48b4-b7a0-aa85bab317c8": {
+      "backgroundColor": "#914BF6",
+      "width": 73.4453125,
+      "height": 35.5
+    },
+    "16ee29a8-d2ba-4d98-a798-9d3849b6856c": {
+      "backgroundColor": "#914BF6",
+      "width": 68.4453125
+    },
+    "53d6145e-77e2-4333-9105-5b547f97b92e": {
+      "backgroundColor": "#FFA500",
+      "width": 96.4453125,
+      "height": 39
+    },
+    "4d4c508b-208f-4a5b-9cd1-d7b89ba78bfc": {
+      "backgroundColor": "#FFA500",
+      "width": 90.4453125,
+      "height": 38
+    },
+    "000eca0a-75c8-4811-aa0e-d70fe21449c6": {
+      "backgroundColor": "#FFA500"
+    },
+    "8ce6a405-fffb-4255-8a09-351b21ee92e4": {
+      "backgroundColor": "#FFA500",
+      "width": 99.4453125,
+      "height": 41
+    },
+    "bf709edd-89e0-4ce8-9856-9b52966571d0": {
+      "backgroundColor": "#FFA500",
+      "width": 92.4453125,
+      "height": 39
+    },
+    "e23d1652-11cb-4cf6-ba14-f69fd7b20f27": {
+      "backgroundColor": "#FFA500",
+      "width": 100.9453125,
+      "height": 52.5
+    },
+    "89ea4c4b-4e38-40cf-957e-8be66ef6047f": {
+      "backgroundColor": "#FFA500"
+    },
+    "f2f3bf02-c3b8-443a-b2b8-29ce4f6a46b7": {
+      "backgroundColor": "#FFA500",
+      "width": 85.4453125,
+      "height": 40.5
+    },
+    "c829258e-129d-476c-839d-ddace6734614": {
+      "backgroundColor": "#FFA500",
+      "width": 72.4453125,
+      "height": 37
+    },
+    "6b11d59e-fac1-4913-81ab-a12a3d6f765d": {
+      "backgroundColor": "#FFA500",
+      "width": 68.4453125,
+      "height": 40
+    },
+    "8fc5cf18-f573-4a09-90fc-ab432c2a3481": {
+      "backgroundColor": "#FFA500",
+      "width": 87.4453125,
+      "height": 38
+    },
+    "0263767b-6c2c-41d5-be13-e51645ae8b4b": {
+      "backgroundColor": "#FFA500",
+      "width": 89.9453125,
+      "height": 40
+    },
+    "ae2ad8fd-4687-44d5-9eae-a318d9d2cb83": {
+      "backgroundColor": "#FFA500",
+      "width": 89.9453125,
+      "height": 41
+    },
+    "13c9562a-31df-4794-b7a8-70e87d41b501": {
+      "backgroundColor": "#FFA500"
+    },
+    "9319c8fe-2b92-4512-af3b-ec758f4afc59": {
+      "backgroundColor": "#FFF060",
+      "width": 87.9453125,
+      "height": 50
+    },
+    "9916b3d0-ff4a-4bd4-9f31-85df5e9d49a6": {
+      "backgroundColor": "#FFF060",
+      "width": 98.9453125,
+      "height": 47
+    },
+    "fba208fc-7471-46da-86d7-26e4e1f509aa": {
+      "backgroundColor": "#FFF060",
+      "width": 95.9453125,
+      "height": 45
+    },
+    "fc659bf3-be96-4b74-8e5b-0d42b8694058": {
+      "backgroundColor": "#FFF060",
+      "width": 93.9453125,
+      "height": 45
+    },
+    "0023acee-1b47-4541-8fd8-f077a11bb398": {
+      "backgroundColor": "#FFF060",
+      "width": 69.9453125,
+      "height": 36
+    },
+    "a52802d2-3ff3-4b84-8b6d-50b55a63d0ea": {
+      "backgroundColor": "#FFF060",
+      "width": 75.9453125,
+      "height": 36
+    },
+    "aa01a046-e9fc-4fe7-aa48-8f8ad0e499bf": {
+      "backgroundColor": "#FFF060",
+      "width": 64.9453125,
+      "height": 37
+    },
+    "0c91268f-876d-41dd-95df-e49d2e2650d8": {
+      "backgroundColor": "#FFF060",
+      "width": 66.9453125,
+      "height": 37
+    },
+    "8ac6f8c2-2bfd-405e-9f19-e8f106991a55": {
+      "backgroundColor": "#FFF060",
+      "width": 71.9453125,
+      "height": 36
+    },
+    "13cb7571-27cd-4a62-b0a2-b9d9c82177d7": {
+      "backgroundColor": "#FFF060"
+    },
+    "12f29806-83c9-4b3e-bd0e-58233ba8328f": {
+      "backgroundColor": "#FB351D",
+      "width": 95.9453125,
+      "height": 47
+    },
+    "f664b038-6a74-4f9c-988a-97a4cacfb048": {
+      "backgroundColor": "#FB351D",
+      "width": 90.9453125,
+      "height": 43
+    },
+    "60d75484-a7c3-4560-8366-032e3a3113e0": {
+      "backgroundColor": "#FB351D"
+    },
+    "d82ab009-4204-4c79-a082-f9349fc222a3": {
+      "backgroundColor": "#FB351D"
+    },
+    "7b595bf0-1eb7-4558-8151-d0a5410bea83": {
+      "backgroundColor": "#FB351D"
+    },
+    "02984a5a-f041-4e6d-99bf-7bcb21573b79": {
+      "backgroundColor": "#FB351D"
+    },
+    "d53cb13c-7306-4867-bcaf-af52ef54dbff": {
+      "backgroundColor": "#FB351D",
+      "width": 93.4453125,
+      "height": 45
+    },
+    "df4a58b9-10e6-4d83-a90a-b46dc2306ede": {
+      "backgroundColor": "#FB351D",
+      "width": 93.4453125,
+      "height": 44.5
+    },
+    "22f4b49f-d695-45ad-9fc4-60aefb780859": {
+      "backgroundColor": "#FB351D",
+      "width": 91.4453125,
+      "height": 51.5
+    },
+    "326c3c1e-c41b-459f-bf9f-40ecdcd3e0b3": {
+      "backgroundColor": "#FB351D",
+      "width": 89.9453125,
+      "height": 48
+    },
+    "2b6b5794-477f-4ff3-97ad-0138de9e2273": {
+      "backgroundColor": "#FB351D",
+      "width": 84.4453125,
+      "height": 48.5
+    },
+    "d2254d4b-2a0b-4fb5-92d0-5de706d8bdba": {
+      "backgroundColor": "#FB351D"
+    },
+    "c6bfa6d3-c5b3-4823-8df8-55ff1767bd40": {
+      "backgroundColor": "#FB351D"
+    },
+    "3a9d9fdb-5a3c-4eec-9698-8cfd1e104376": {
+      "backgroundColor": "#F69AE0",
+      "width": 55.9453125
+    },
+    "9d61044a-6355-4cc2-bc92-daaa48c470b2": {
+      "backgroundColor": "#F69AE0",
+      "width": 71.9453125,
+      "height": 34
+    },
+    "24edb7f7-45d5-468d-b31d-2bd4dcf6c5aa": {
+      "backgroundColor": "#F69AE0",
+      "width": 69.4453125,
+      "height": 34.5
+    },
+    "9b61363a-4e01-4e78-afb8-61876aab7c37": {
+      "backgroundColor": "#FB351D",
+      "width": 82.970703125,
+      "height": 56.005859375
+    },
+    "8bf119fe-9cc0-4ab0-9941-740ac9aa08ec": {
+      "backgroundColor": "#FB351D",
+      "width": 85.970947265625,
+      "height": 54.005615234375
+    },
+    "13976375-2b99-4991-9130-6987e89377c2": {
+      "backgroundColor": "#FB351D",
+      "width": 80.970703125,
+      "height": 54.005126953125
+    },
+    "1e4708e2-6832-4f32-ae32-4b735a2415ce": {
+      "backgroundColor": "#FB351D",
+      "width": 82.97021484375,
+      "height": 55.0054931640625
+    },
+    "54302a64-6b42-44b5-b93d-f223cecd0cf9": {
+      "backgroundColor": "#FB351D",
+      "width": 101.9453125,
+      "height": 48
+    },
+    "0ddfbf1c-a027-4a61-b455-58ff558ef72a": {
+      "backgroundColor": "#FB351D",
+      "width": 87.9453125,
+      "height": 43
+    },
+    "7e3fdc6d-32c2-4728-85e4-076856a09ee6": {
+      "backgroundColor": "#FB351D",
+      "width": 88.4453125,
+      "height": 40
+    },
+    "f84ea821-a810-4b91-823b-2e2f5efdb2c9": {
+      "backgroundColor": "#FB351D",
+      "width": 91.4453125,
+      "height": 44
+    },
+    "db405328-ba99-4a1c-ad08-d6cbd6ae7cd6": {
+      "backgroundColor": "#FB351D",
+      "width": 78.4453125
+    },
+    "e6bd55d5-dca6-4215-8268-70f9b9581533": {
+      "backgroundColor": "#FB351D",
+      "width": 78.4453125,
+      "height": 36
+    },
+    "dcc9b422-3d79-47ae-b2f5-16384fed8542": {
+      "backgroundColor": "#FB351D"
+    },
+    "2dcb2b88-be55-4b04-aab0-272bbf231bf4": {
+      "backgroundColor": "#FB351D"
+    },
+    "03ee443c-97fa-41e8-8891-20e027c79e8f": {
+      "backgroundColor": "#FB351D",
+      "width": 112.4453125,
+      "height": 58
+    },
+    "938d8758-5e12-40c4-80fb-297848e1154a": {
+      "backgroundColor": "#FB351D"
+    },
+    "3b935de0-b24b-4b8f-b2bb-ea2860300860": {
+      "backgroundColor": "#FB351D",
+      "width": 91.9453125,
+      "height": 47.5
+    },
+    "9a04d09e-6b71-4784-989d-eb23333d380e": {
+      "backgroundColor": "#FB351D",
+      "width": 111.9453125,
+      "height": 58.5
+    },
+    "4db6f050-71e8-4eb9-8723-4bb4139ace69": {
+      "backgroundColor": "#F69AE0",
+      "width": 94.9453125,
+      "height": 45.5
+    },
+    "f9790d54-f6df-4203-ba30-b73fe0bb47ea": {
+      "backgroundColor": "#F69AE0",
+      "width": 90.4453125,
+      "height": 48.5
+    },
+    "de52d223-a172-471e-adee-00ddf86e1a44": {
+      "backgroundColor": "#F69AE0",
+      "width": 90.4453125,
+      "height": 48.5
+    },
+    "d0d60afe-8c92-4e08-9341-2986807fa60d": {
+      "backgroundColor": "#F69AE0",
+      "width": 91.4453125,
+      "height": 46.5
+    },
+    "50ab3f64-f2cc-4c79-b4a9-4651fed024d7": {
+      "backgroundColor": "#F69AE0",
+      "width": 64.4453125,
+      "height": 34.5
+    },
+    "fb47d6ad-1f72-4077-9655-ec4bb284f92f": {
+      "backgroundColor": "#17A3FF",
+      "width": 104.9453125,
+      "height": 46.5
+    },
+    "e8b8a23b-52dc-4204-8363-e3dd90b1246c": {
+      "backgroundColor": "#17A3FF",
+      "width": 73.4453125,
+      "height": 39.5
+    },
+    "5a857457-01a7-4d12-86a2-804c2644d03e": {
+      "backgroundColor": "#17A3FF",
+      "width": 69.4453125,
+      "height": 41.5
+    },
+    "5b727308-0b7a-4cab-8057-2f3d67381404": {
+      "backgroundColor": "#17A3FF",
+      "width": 74.4453125,
+      "height": 41.5
+    },
+    "513190af-737f-4306-a92a-a08c8177b1a1": {
+      "backgroundColor": "#00BEB6"
+    },
+    "3c8e9d69-8a2b-404b-97dd-361770d95e4c": {
+      "backgroundColor": "#00BEB6"
+    },
+    "bb999f8d-f5da-4628-9eac-b2e5199e3edc": {
+      "backgroundColor": "#00BEB6",
+      "width": 96.9453125,
+      "height": 48.5
+    },
+    "0fe70018-6af0-4b25-8a56-1ab3c4fe5ecb": {
+      "backgroundColor": "#00BEB6"
+    },
+    "ad45a5f9-9d4e-4166-84c7-e36e3745eba5": {
+      "backgroundColor": "#00BEB6"
+    },
+    "d9005575-419d-46f2-9f73-2cbb8f83104c": {
+      "backgroundColor": "#00BEB6"
+    },
+    "e3c2d1b6-6d92-4a04-85a3-72d4befaab13": {
+      "backgroundColor": "#00BEB6"
+    },
+    "28f23193-4c4d-47f3-98c3-a1a0620c62b4": {
+      "backgroundColor": "#00BEB6"
+    },
+    "d6be0996-4f08-48de-a912-c8ac4ac74afb": {
+      "backgroundColor": "#00BEB6"
+    },
+    "24fde7a3-1825-4602-9d15-a97e62c290ac": {
+      "backgroundColor": "#00BEB6"
+    },
+    "4b8bcdcb-6713-4c35-9a8c-7608f3549469": {
+      "backgroundColor": "#00BEB6",
+      "width": 91.9453125,
+      "height": 52
+    },
+    "786f0d7f-d711-4182-89be-90b69998229d": {
+      "backgroundColor": "#00BEB6",
+      "width": 88.9453125,
+      "height": 48
+    },
+    "06226826-dc1e-4bcf-bf97-95641c53972f": {
+      "backgroundColor": "#00BEB6",
+      "width": 96.9453125,
+      "height": 52
+    },
+    "f5fba01a-9db4-4559-8285-d03f53f527ad": {
+      "backgroundColor": "#00BEB6",
+      "width": 86.4453125,
+      "height": 39.5
+    },
+    "ecb8adc9-05cd-4744-a747-c16746f3d29e": {
+      "backgroundColor": "#00BEB6",
+      "width": 97.4453125,
+      "height": 47.5
+    },
+    "fa7aeeb1-f65c-442e-9de6-7085d807aaf9": {
+      "backgroundColor": "#00BEB6",
+      "width": 84.4453125,
+      "height": 46.5
+    },
+    "31f7d0a9-8b1b-419d-a7ab-9be76f9b0d80": {
+      "backgroundColor": "#00BEB6",
+      "width": 86.4453125,
+      "height": 41.5
+    },
+    "a8b4e38e-a137-463f-b510-34fc38be2638": {
+      "backgroundColor": "#00BEB6",
+      "width": 92.4453125,
+      "height": 41.5
+    },
+    "e0d60a51-2906-47ac-867f-3aa53ea0e60e": {
+      "backgroundColor": "#00BEB6"
+    },
+    "a4c90594-2932-49c6-bc3d-4aeeec922332": {
+      "backgroundColor": "#00BEB6",
+      "width": 94.4453125,
+      "height": 44.8062744140625
+    },
+    "1fe9e574-9205-470e-a1e8-8c95865abb78": {
+      "backgroundColor": "#00BEB6",
+      "width": 93.4453125,
+      "height": 42
+    },
+    "da05d13e-a1f2-490a-8374-5835941822d0": {
+      "backgroundColor": "#00BEB6"
+    },
+    "b4a98058-afa0-40e8-8bdf-55f4652b1272": {
+      "backgroundColor": "#00BEB6"
+    },
+    "22cf3a78-d021-4ac7-9992-b112b422b795": {
+      "backgroundColor": "#00BEB6"
+    },
+    "d7413150-7fa2-4ae8-a49e-a14cc8ed5519": {
+      "backgroundColor": "#00BEB6"
+    },
+    "e1a28faf-d12d-4c28-a3a9-0bcdd4682771": {
+      "backgroundColor": "#00BEB6"
+    },
+    "18599331-c135-4c25-a7f6-dcffa394844a": {
+      "backgroundColor": "#00BEB6"
+    },
+    "40f497de-5a36-4eb8-94dd-38fc89ba6dca": {
+      "backgroundColor": "#00BEB6"
+    },
+    "3330818f-5bd6-4720-abaf-c3f5a97c7309": {
+      "backgroundColor": "#00BEB6",
+      "width": 89.9453125,
+      "height": 51.5
+    },
+    "45a1afae-7451-4210-b0cb-092556671c2f": {
+      "backgroundColor": "#00BEB6",
+      "width": 94.9453125,
+      "height": 50.5
+    },
+    "f01bc2eb-0cf8-4725-a46d-ec4f45f50be1": {
+      "backgroundColor": "#00BEB6",
+      "width": 86.9453125,
+      "height": 41.5
+    },
+    "fb7e7394-e79e-4836-abad-6da663b02be8": {
+      "backgroundColor": "#CEED5C"
+    },
+    "4449543b-9ebc-4671-847b-98bdd80c3665": {
+      "backgroundColor": "#CEED5C"
+    },
+    "a7e194a6-cdb6-4f90-8b78-5b786ddc0f45": {
+      "backgroundColor": "#00BEB6",
+      "width": 84.9453125,
+      "height": 45.5
+    },
+    "9a048c59-a379-4cea-86ea-e8743d021cb4": {
+      "backgroundColor": "#00BEB6",
+      "width": 85.9453125,
+      "height": 44.5
+    },
+    "8134ee3f-f5ec-4664-ae73-c6c66b29b959": {
+      "backgroundColor": "#CEED5C",
+      "width": 87.4453125,
+      "height": 46.5
+    },
+    "604c99ee-bf51-426f-b662-59bac8f47742": {
+      "backgroundColor": "#CEED5C",
+      "width": 93.4736328125,
+      "height": 53.505615234375
+    },
+    "f25523b2-aaeb-4ac3-b8e4-cede3b0379ad": {
+      "backgroundColor": "#CEED5C",
+      "width": 81.4453125,
+      "height": 47
+    },
+    "660546a8-aafb-4386-8c62-e007a2a3d56b": {
+      "backgroundColor": "#CEED5C",
+      "width": 78.4453125,
+      "height": 37.5
+    },
+    "02854a24-7691-476d-87d8-83079b825189": {
+      "backgroundColor": "#CEED5C",
+      "width": 82.4453125,
+      "height": 40.5
+    },
+    "53b6855c-3bdf-47bd-86d2-1a326320de5f": {
+      "backgroundColor": "#CEED5C",
+      "width": 92.4453125,
+      "height": 51.5
+    },
+    "43703233-e9c9-405e-bd8f-010ac673ab74": {
+      "backgroundColor": "#CEED5C",
+      "width": 90.9453125,
+      "height": 50
+    },
+    "766eba5c-ede7-48f7-84be-dbe7c145b84d": {
+      "backgroundColor": "#CEED5C",
+      "width": 89.9453125,
+      "height": 53
+    },
+    "454c2efd-ea38-4f2c-a8dc-4bcac721f571": {
+      "backgroundColor": "#CEED5C",
+      "width": 86.9453125,
+      "height": 43
+    },
+    "d16ab33b-e66e-458d-ad47-dba73ce63b04": {
+      "backgroundColor": "#CEED5C",
+      "width": 89.9453125,
+      "height": 43
+    },
+    "3877f408-6ffb-4a00-ab9d-4b590b379dc0": {
+      "backgroundColor": "#CEED5C",
+      "width": 88.9453125,
+      "height": 46
+    },
+    "2269331d-5c41-4f97-a01a-db8b864cc72b": {
+      "backgroundColor": "#CEED5C",
+      "width": 88.9453125,
+      "height": 48
+    },
+    "b977f5a9-a6bd-4c03-807a-7a60da62a016": {
+      "backgroundColor": "#CEED5C",
+      "width": 90.9453125,
+      "height": 49
+    },
+    "ce36c2b8-cb39-4549-8494-ddfd0aff4aa6": {
+      "backgroundColor": "#CEED5C",
+      "width": 97.9453125,
+      "height": 43.5
+    },
+    "09e4917e-1ed4-4a6b-956f-667880fb3b63": {
+      "backgroundColor": "#CEED5C",
+      "width": 87.9453125,
+      "height": 41
+    },
+    "cf87f9e8-b45c-4d98-809f-2838421a082c": {
+      "backgroundColor": "#CEED5C",
+      "width": 87.9453125,
+      "height": 41
+    },
+    "6597151d-8f1a-4c3d-b3e4-af7461f13a63": {
+      "backgroundColor": "#CEED5C"
+    },
+    "6112d9ba-ddbd-4daf-8f16-135dcf599f0a": {
+      "backgroundColor": "#17A3FF",
+      "width": 64.4453125,
+      "height": 40.5
+    },
+    "d8c897be-6c7e-4ed7-a031-f527a3df4b31": {
+      "backgroundColor": "#00BEB6"
+    },
+    "a682be48-bd02-48ca-bc11-6131a8998759": {
+      "backgroundColor": "#00BEB6"
+    },
+    "b569e11c-7559-43fd-aa4a-38ca85d496c8": {
+      "backgroundColor": "#00BEB6"
+    },
+    "5bcbb038-f6c5-4cb0-b9d4-4cd14a047d36": {
+      "backgroundColor": "#00BEB6"
+    },
+    "67493b42-48be-40cb-b025-b44d5a89125e": {
+      "backgroundColor": "#00BEB6",
+      "width": 95.4453125,
+      "height": 55
+    },
+    "9328d665-ac83-424d-8432-caa14a64dbb5": {
+      "backgroundColor": "#00BEB6",
+      "width": 88.4453125,
+      "height": 50.5
+    },
+    "e081d2a2-1a0b-4aec-a5e4-355188e18af8": {
+      "backgroundColor": "#00BEB6",
+      "width": 91.4453125,
+      "height": 46.5
+    }
+  },
+  "tool": "pistar.2.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 20 Sep 2021 15:48:35 GMT",
+  "diagram": {
+    "width": 8826,
+    "height": 1950,
+    "name": "Welcome Model",
+    "customProperties": {
+      "Description": "Welcome to the piStar tool! This model describe some of the recent improvements in the tool.\n\nFor help using this tool, please check the Help menu above"
+    }
+  }
+}
