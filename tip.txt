@@ -1,0 +1,7 @@
+ /* em vez de programar um if para cada feature, outra forma de fazer seria
+               inserir, para cada elemento, qual a feature a que ele está relacionado. Isso pode
+               ser feito pela própria ferramenta com o botão "Add property".
+               Daí, aqui a gente ia olhar cada elemento do model (istar.getElements()) e verificar
+               se a sua feature está selecionada ou não (element.prop('customProperty/feature')).
+               Se não estiver, remover aquele elemento.
+             */

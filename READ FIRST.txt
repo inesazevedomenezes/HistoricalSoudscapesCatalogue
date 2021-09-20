@@ -1,0 +1,21 @@
+This folder contains all the necessary files to execute the soundscape catalogue and the developed plugins.
+
+The file for the developed plugins are under tool->sustainabiltiyCatalog
+	- The "soundscapeCatalogueColorLabel" is the plugin responsible for the implementation of the color label
+	- The "soundscapeCatalogueElementLabel" is the plugin responsible for the implementation of the element label
+	- The "soundscapeCataloguePlugin3" is the plugin responsible for the implementation of the configuration of the catalogue
+	- The "soundscapeCatalogueModel" contains the all the necessary information to load the soundscape catalogue
+
+To start the soundscape catalogue, follow these steps:
+
+1. Open the folder "tool"
+2. Open the file "index"
+3. On the new webpage, go to the tab "plugins"
+4. Click on the button "Soundscape Catalogue"
+5. Select the desired requirements ("Select all" for all requirements of each dimensions)
+6. Confirm and wait a couple of seconds for the catalogue to load
+
+On the webpage, you can add new elements ("add" tab), check, modify or delete existing elements (by clicking on an element), save the model ("save" tab).
+You can also configure and filter the catalogue to only show the requirements you want ("Soundscape Catalogue" button under "Plugins" tab) or check the
+two labels ("color label" and "element label").
+
